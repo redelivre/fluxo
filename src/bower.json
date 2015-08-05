@@ -1,0 +1,7 @@
+{
+  "name": "Fluxo",
+  "dependencies": {
+    "foundation": "~5.5.2",
+    "fullpage.js": "~2.6.7"
+  }
+}
