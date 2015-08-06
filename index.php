@@ -37,7 +37,18 @@ get_header(); ?>
 		<section class="slide">
 			<div class="row">
 				<div class="small-12 columns">
-					<h2>Depoimentos</h2>
+					<h2>Tecnologias sociais para uma sociedade em rede</h2>
+						<div class="row">
+							<div class="medium-4 columns">Website</div>
+							<div class="medium-4 columns">Participação social</div>
+							<div class="medium-4 columns">Plataformas de deliberação online</div>
+						</div>
+
+						<div class="row">
+							<div class="medium-4 columns">Comunicação digital</div>
+							<div class="medium-4 columns">Soluções em gestão</div>
+							<div class="medium-4 columns">Sistemas de contribuição</div>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -45,9 +56,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="small-12 columns">
 					<h2>Desenvolvimento em rede</h2>
-					<div class="equalizer">Ola</div>
-					<div class="equalizer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, corporis dicta debitis voluptates eligendi, ipsam fugiat suscipit nemo, minima aut minus vitae rerum repudiandae unde aliquam blanditiis voluptatibus est magnam?</div>
-					<div class="equalizer">risos</div>
+					<p>Diagnosticar e sistematizar demandas, especificar tecnologias, definir prioridades, desenvolver, testar e implementar soluções de forma aberta e colaborativa, disponibilizando softwares livres que fortalecam movimentos e organizações culturais e sociais</p>
 				</div>
 			</div>
 		</section>

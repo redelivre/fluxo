@@ -16,8 +16,6 @@
 			<div class="small-6 columns">
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fluxo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'fluxo' ), 'WordPress' ); ?></a>
-					<span class="sep"> | </span>
-					<?php printf( esc_html__( '%1$s by %2$s.', 'fluxo' ), 'fluxo', '<a href="http://redelivre.org.br" rel="designer">redelivre</a>' ); ?>
 				</div><!-- .site-info -->
 			</div>
 			<div class="small-6 columns">
