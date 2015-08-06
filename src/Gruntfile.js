@@ -13,6 +13,7 @@ module.exports = function(grunt) {
     },
 
     // Copy files
+    /*
     copy: {
       foundation_scss: {
         files: [{
@@ -32,7 +33,26 @@ module.exports = function(grunt) {
           dest: '../assets/js/'
         }]
       },
+      fullpage_css: {
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'bower_components/',
+          src: 'fullpage.js/jquery.fullPage.css',
+          dest: '../assets/css/'
+        }]
+      },
+      fullpage_js: {
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'bower_components/',
+          src: 'fullpage.js/jquery.fullPage.min.js',
+          dest: '../assets/js/'
+        }]
+      }
     },
+    */
 
     // Compile SASS files
     sass: {
@@ -78,5 +98,5 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Register tasks
-  grunt.registerTask('default', ['copy', 'sass', 'watch']);
+  grunt.registerTask('default', ['sass', 'watch']);
 }
