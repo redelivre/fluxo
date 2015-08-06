@@ -16,7 +16,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<section class="intro slide">
+		<section class="intro pane">
 			<div class="row">
 				<div class="small-12 columns">
 					<h1>Tecnologias Sociais para uma sociedade em rede</h1>
@@ -26,7 +26,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="slide">
+		<section class="pane">
 			<div class="row">
 				<div class="small-12 columns">
 					<h2>7 países, 40 cidades, 280 projetos, 4 mil usuários</h2>
@@ -34,7 +34,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<section class="slide">
+		<section class="pane">
 			<div class="row">
 				<div class="small-12 columns">
 					<h2>Tecnologias sociais para uma sociedade em rede</h2>
@@ -52,7 +52,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<section class="slide">
+		<section class="pane">
 			<div class="row">
 				<div class="small-12 columns">
 					<h2>Desenvolvimento em rede</h2>
@@ -60,7 +60,7 @@ get_header(); ?>
 				</div>
 			</div>
 		</section>
-		<section class="slide">
+		<section class="pane">
 			<div class="row">
 				<div class="small-12 columns">
 					<h2>Cadastre-se</h2>
