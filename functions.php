@@ -127,6 +127,13 @@ function fluxo_scripts() {
 	// Main theme style
 	wp_enqueue_style( 'fluxo-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 
+	// fullPage.js
+	wp_enqueue_style( 'fluxo-fullpage-css', get_template_directory_uri() . '/assets/css/jquery.fullPage.css', '', '2.6.6' );
+	wp_enqueue_style( 'fluxo-fullpage-css' );
+	wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
+
+	wp_enqueue_script( 'fluxo-scripts', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
+
 	// Grunt watch livereload in the browser.
 	wp_enqueue_script( 'fluxo-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
 
