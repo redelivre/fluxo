@@ -1,8 +1,6 @@
 /*--------------------------------------------------------------
-# Main stylesheet
+# Variables
 --------------------------------------------------------------*/
 
-@import "variables";
-@import "layout";
-@import "accessibility";
-@import "wordpress";
+$brand-main: #336;
+$brand-secondary: #ebebeb;

@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# Layout and structure
+--------------------------------------------------------------*/
+
+.pane:nth-child(even) {
+	background: $brand-secondary;
+}
+
+.site-header,
+.site-footer {
+	background: $brand-main;
+	padding: 1em;
+}
