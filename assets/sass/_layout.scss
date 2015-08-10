@@ -2,12 +2,16 @@
 # Layout and structure
 --------------------------------------------------------------*/
 
+body {
+	color: $brand-text;
+}
+
 .pane:nth-child(even) {
 	background: $brand-secondary;
 }
 
 .site-header,
 .site-footer {
-	background: $brand-main;
+	background: $brand-one;
 	padding: 1em;
 }
