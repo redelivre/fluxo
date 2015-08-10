@@ -25,7 +25,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fluxo' ); ?></a>
 		
 		<div class="row">
-		 	<div class="small-6 columns">
+		 	<div class="medium-6 columns">
 				<div class="site-branding">
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -35,8 +35,8 @@
 				</div><!-- .site-branding -->
 			</div>
 
-			<div class="small-6 columns">
-				<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="medium-6 columns">
+				<nav id="site-navigation" class="main-navigation text-right" role="navigation">
 					<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<a href="<?php echo wp_registration_url(); ?>">Cadastre-se</a>
 					<?php wp_loginout(); ?>

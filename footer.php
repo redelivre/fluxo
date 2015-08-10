@@ -13,17 +13,17 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="row">
-			<div class="small-6 columns">
+			<div class="medium-6 columns">
 				<div class="site-info">
 					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fluxo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'fluxo' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->
 			</div>
-			<div class="small-6 columns">
+			<div class="medium-6 columns">
 				<div class="site-social text-right">
+					<a href="#">Transparência</a>
+					<a href="#">Contato</a>
 					<a href="#">GitHub</a>
-					<a href="#">GitHub</a>
-					<a href="#">GitHub</a>
-					<a href="#">GitHub</a>
+					
 				</div>
 			</div>
 		</div>
