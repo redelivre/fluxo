@@ -8,12 +8,47 @@ body {
   color: #0c101c; }
 
 .pane:nth-child(even) {
-  background: #ebebeb; }
+  background: #fbfbfb; }
 
 .site-header,
 .site-footer {
-  background: #1a2b55;
   padding: 1em; }
+
+/* Site header */
+.site-header {
+  background: #c7d92e;
+  position: fixed;
+  width: 100%;
+  z-index: 99999; }
+  .site-header .site-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0; }
+
+/* Site footer */
+.site-footer {
+  background: #1a2b55; }
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+.lead {
+  font-size: 1.5em; }
+
+/*--------------------------------------------------------------
+# Panels
+--------------------------------------------------------------*/
+.pane__title {
+  color: #1a2b55;
+  line-height: 1.2;
+  font-weight: bold; }
+
+.pane--intro {
+  background: #1a2b55 url("../images/ix-aldeia-multietnica.jpg") no-repeat;
+  background-size: cover;
+  color: #fff; }
+  .pane--intro .pane__title {
+    color: #c7d92e; }
 
 /*--------------------------------------------------------------
 # Accessibility
