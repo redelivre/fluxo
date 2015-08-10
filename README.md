@@ -1,4 +1,7 @@
 Fluxo
 ===
 
-Primeira versão do tema da **redelivre** usando Grunt, npm, Bower e Underscores.
+O tema principal da **redelivre**.
+
+### Créditos
+Fotos: [Mídia Ninja](https://www.flickr.com/photos/midianinja/)
