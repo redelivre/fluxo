@@ -28,8 +28,26 @@ get_header(); ?>
 		<section class="pane pane--network">
 			<div class="row">
 				<div class="small-12 columns">
-					<h2 class="text-center pane__title">7 países, 40 cidades, 280 projetos, 4 mil usuários</h2>
+					<h2 class="text-center pane__title">O impacto da rede</h2>
 					<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dolor similique, possimus, harum in debitis iste quos dicta ipsa aliquid sequi. Voluptate ipsam temporibus, eum doloribus earum consequatur. Itaque, nostrum.</p>
+					<ul class="small-block-grid-2 medium-block-grid-4">
+						<li class="network__item">
+							<span class="network__number">7</span>
+							<span class="network__text">países</span>
+						</li>
+						<li class="network__item">
+							<span class="network__number">40</span>
+							<span class="network__text">cidades</span>
+						</li>
+						<li class="network__item">
+							<span class="network__number">280</span>
+							<span class="network__text">projetos</span>
+						</li>
+						<li class="network__item">
+							<span class="network__number">4k</span>
+							<span class="network__text">usuários</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</section>
@@ -40,7 +58,7 @@ get_header(); ?>
 						<p class="lead text-center">Tecnologias sociais para uma sociedade em rede</p>
 						<div class="row">
 							<div class="medium-4 columns">
-								<h3>Website</h3>
+								<h3>Websites</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
 							</div>
 							<div class="medium-4 columns">
@@ -59,7 +77,7 @@ get_header(); ?>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
 							</div>
 							<div class="medium-4 columns">
-								<h3>Soluções em gestão</h3>
+								<h3>Envio de email e SMS</h3>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci eius ea cumque minima recusandae est beatae, voluptates? Earum, incidunt, repellat. Laboriosam nihil vero aspernatur aliquam delectus commodi, id error.</p>
 							</div>
 							<div class="medium-4 columns">

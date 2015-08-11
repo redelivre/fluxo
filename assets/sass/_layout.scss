@@ -2,7 +2,8 @@
 # Layout and structure
 --------------------------------------------------------------*/
 
-body {
+body,
+h1, h2, h3, h4, h5, h6 {
 	color: $brand-text;
 }
 
@@ -60,5 +61,44 @@ body {
 
 	.pane__title {
 		color: $brand-five;
+	}
+}
+
+.pane--network {
+	.network__item {
+		background: $brand-three;
+		line-height: 1;
+		padding: 1.5em;
+		text-align: center;
+
+		&:nth-child(1) {
+			background: $brand-two;
+		}
+
+		&:nth-child(2) {
+			background: $brand-three;
+		}
+
+		&:nth-child(3) {
+			background: $brand-four;
+		}
+
+		&:nth-child(4) {
+			background: $brand-five;
+		}
+
+		.network__number,
+		.network__text {
+			display: block;
+		}
+
+		.network__number {
+			font-size: 4em;
+			font-weight: bold;
+		}
+
+		.network__text {
+			text-transform: uppercase;
+		}
 	}
 }

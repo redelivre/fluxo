@@ -4,7 +4,8 @@
 /*--------------------------------------------------------------
 # Layout and structure
 --------------------------------------------------------------*/
-body {
+body,
+h1, h2, h3, h4, h5, h6 {
   color: #0c101c; }
 
 .pane:nth-child(even) {
@@ -49,6 +50,28 @@ body {
   color: #fff; }
   .pane--intro .pane__title {
     color: #c7d92e; }
+
+.pane--network .network__item {
+  background: #f8ca14;
+  line-height: 1;
+  padding: 1.5em;
+  text-align: center; }
+  .pane--network .network__item:nth-child(1) {
+    background: #00a5a4; }
+  .pane--network .network__item:nth-child(2) {
+    background: #f8ca14; }
+  .pane--network .network__item:nth-child(3) {
+    background: #ee3753; }
+  .pane--network .network__item:nth-child(4) {
+    background: #c7d92e; }
+  .pane--network .network__item .network__number,
+  .pane--network .network__item .network__text {
+    display: block; }
+  .pane--network .network__item .network__number {
+    font-size: 4em;
+    font-weight: bold; }
+  .pane--network .network__item .network__text {
+    text-transform: uppercase; }
 
 /*--------------------------------------------------------------
 # Accessibility
