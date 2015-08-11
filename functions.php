@@ -113,7 +113,7 @@ add_action( 'widgets_init', 'fluxo_widgets_init' );
  */
 function fluxo_scripts() {
 	// normalize.css
-	wp_enqueue_style( 'fluxo-normalize', get_template_directory_uri() . '/assets/css/normalize.min.css', '', '3.0.3' );
+	wp_register_style( 'fluxo-normalize', get_template_directory_uri() . '/assets/css/normalize.min.css', '', '3.0.3' );
 	wp_enqueue_style( 'fluxo-normalize' );
 
 	// Foundation
@@ -125,10 +125,11 @@ function fluxo_scripts() {
 	wp_enqueue_style( 'fluxo-style', get_stylesheet_uri() );
 
 	// Main theme style
-	wp_enqueue_style( 'fluxo-style-main', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_register_style( 'fluxo-style-main', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'fluxo-style-main');
 
 	// fullPage.js
-	wp_enqueue_style( 'fluxo-fullpage-css', get_template_directory_uri() . '/assets/css/jquery.fullPage.css', '', '2.6.6' );
+	wp_register_style( 'fluxo-fullpage-css', get_template_directory_uri() . '/assets/css/jquery.fullPage.css', '', '2.6.6' );
 	wp_enqueue_style( 'fluxo-fullpage-css' );
 	wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
 
