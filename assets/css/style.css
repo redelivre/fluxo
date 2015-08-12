@@ -44,8 +44,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-weight: bold; }
 
+/* Introduction */
 .pane--intro {
-  background: #1a2b55 url("../images/ix-aldeia-multietnica.jpg") no-repeat;
+  background: #1a2b55 url("../images/contra-a-reducao.jpg") no-repeat;
   background-size: cover;
   color: #fff; }
   .pane--intro .pane__title {
