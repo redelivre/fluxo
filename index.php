@@ -58,31 +58,43 @@ get_header(); ?>
 						<p class="lead text-center">Tecnologias sociais para uma sociedade em rede</p>
 						<div class="row">
 							<div class="medium-4 columns">
-								<h3>Websites</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
+								<div class="service__item">
+									<h3 class="service__title">Websites</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
+								</div>
 							</div>
 							<div class="medium-4 columns">
-								<h3>Participação social</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim, magnam voluptates itaque, debitis necessitatibus vero, explicabo distinctio cumque repellat exercitationem dicta laborum corporis excepturi! Cumque quas eaque, perspiciatis minus?</p>
+								<div class="service__item">
+									<h3 class="service__title">Participação social</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim, magnam voluptates itaque, debitis necessitatibus vero, explicabo distinctio cumque repellat exercitationem dicta laborum corporis excepturi! Cumque quas eaque, perspiciatis minus?</p>
+								</div>
 							</div>
 							<div class="medium-4 columns">
-								<h3>Plataformas de deliberação online</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem tempora consectetur illo nostrum, ex cupiditate quos aspernatur earum, minima distinctio dolorum porro inventore officia iure obcaecati a eum totam.</p>
+								<div class="service__item">
+									<h3 class="service__title">Plataformas de deliberação online</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem tempora consectetur illo nostrum, ex cupiditate quos aspernatur earum, minima distinctio dolorum porro inventore officia iure obcaecati a eum totam.</p>
+								</div>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="medium-4 columns">
-								<h3>Comunicação digital</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
+								<div class="service__item">
+									<h3 class="service__title">Comunicação digital</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
+								</div>
 							</div>
 							<div class="medium-4 columns">
-								<h3>Envio de email e SMS</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci eius ea cumque minima recusandae est beatae, voluptates? Earum, incidunt, repellat. Laboriosam nihil vero aspernatur aliquam delectus commodi, id error.</p>
+								<div class="service__item">
+									<h3 class="service__title">Envio de email e SMS</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci eius ea cumque minima recusandae est beatae, voluptates? Earum, incidunt, repellat. Laboriosam nihil vero aspernatur aliquam delectus commodi, id error.</p>
+								</div>
 							</div>
 							<div class="medium-4 columns">
-								<h3>Sistemas de contribuição</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dignissimos eveniet eos animi placeat natus iusto molestias, eius quidem sint tempora cupiditate rerum illum accusamus illo vitae quas, dolor hic!</p>
+								<div class="service__item">
+									<h3 class="service__title">Sistemas de contribuição</h3>
+									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dignissimos eveniet eos animi placeat natus iusto molestias, eius quidem sint tempora cupiditate rerum illum accusamus illo vitae quas, dolor hic!</p>
+								</div>
 							</div>
 						</div>
 				</div>

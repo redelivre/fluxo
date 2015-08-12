@@ -64,6 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
+/* Network */
 .pane--network {
 	.network__item {
 		background: $brand-three;
@@ -99,6 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 
 		.network__text {
 			text-transform: uppercase;
+		}
+	}
+}
+
+/* Services */
+.pane--services {
+	background-color: $brand-three;
+
+	.service__item {
+		.service__title {
+			color: inherit;
+			font-size: 1.25em;
+			font-weight: bold;
+			line-height: $heading-line-height;
 		}
 	}
 }

@@ -51,6 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   .pane--intro .pane__title {
     color: #c7d92e; }
 
+/* Network */
 .pane--network .network__item {
   background: #f8ca14;
   line-height: 1;
@@ -72,6 +73,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold; }
   .pane--network .network__item .network__text {
     text-transform: uppercase; }
+
+/* Services */
+.pane--services {
+  background-color: #f8ca14; }
+  .pane--services .service__item .service__title {
+    color: inherit;
+    font-size: 1.25em;
+    font-weight: bold;
+    line-height: 1.2; }
 
 /*--------------------------------------------------------------
 # Accessibility
