@@ -8,6 +8,16 @@ body,
 h1, h2, h3, h4, h5, h6 {
   color: #0c101c; }
 
+a {
+  color: #1a2b55; }
+  a:visited {
+    color: inherit; }
+  a:hover {
+    color: inherit;
+    border-color: inherit;
+    border-width: 0 0 1px;
+    border-style: solid; }
+
 .site-header,
 .site-footer {
   line-height: 2.938;
@@ -28,6 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Site footer */
 .site-footer {
   background: #0c101c; }
+  .site-footer a {
+    color: #f8f7fc; }
 
 /*--------------------------------------------------------------
 # Typography
