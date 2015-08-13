@@ -45,7 +45,7 @@ a {
 
 /* Site footer */
 .site-footer {
-	background: $brand-blue--dark;
+	background: $brand-blue;
 
 	a {
 		color: $brand-white;
@@ -82,6 +82,8 @@ a {
 
 /* Network */
 .pane--network {
+	background-color: $brand-white;
+
 	.network__item {
 		background: $brand-yellow;
 		line-height: 1;
