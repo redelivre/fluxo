@@ -8,9 +8,6 @@ body,
 h1, h2, h3, h4, h5, h6 {
   color: #0c101c; }
 
-.pane:nth-child(even) {
-  background: #fbfbfb; }
-
 .site-header,
 .site-footer {
   line-height: 2.938;

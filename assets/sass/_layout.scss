@@ -4,11 +4,7 @@
 
 body,
 h1, h2, h3, h4, h5, h6 {
-	color: $brand-text;
-}
-
-.pane:nth-child(even) {
-	background: $brand-secondary;
+	color: $brand-blue--dark;
 }
 
 .site-header,
@@ -19,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Site header */
 .site-header {
-	background: $brand-five;
+	background: $brand-green--light;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
@@ -34,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Site footer */
 .site-footer {
-	background: $brand-one;
+	background: $brand-blue;
 }
 
 /*--------------------------------------------------------------
@@ -56,37 +52,37 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Introduction */
 .pane--intro {
-	background: $brand-one url('../images/contra-a-reducao.jpg') no-repeat;
+	background: $brand-blue url('../images/contra-a-reducao.jpg') no-repeat;
 	background-size: cover;
 	color: #fff;
 
 	.pane__title {
-		color: $brand-five;
+		color: $brand-green--light;
 	}
 }
 
 /* Network */
 .pane--network {
 	.network__item {
-		background: $brand-three;
+		background: $brand-yellow;
 		line-height: 1;
 		padding: 1.5em;
 		text-align: center;
 
 		&:nth-child(1) {
-			background: $brand-two;
+			background: $brand-green;
 		}
 
 		&:nth-child(2) {
-			background: $brand-three;
+			background: $brand-yellow;
 		}
 
 		&:nth-child(3) {
-			background: $brand-four;
+			background: $brand-pink;
 		}
 
 		&:nth-child(4) {
-			background: $brand-five;
+			background: $brand-green--light;
 		}
 
 		.network__number,
@@ -107,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Services */
 .pane--services {
-	background-color: $brand-three;
+	background-color: $brand-yellow;
 
 	.service__item {
 		.service__title {

@@ -1,14 +1,12 @@
 // Brand colors. The color names come from http://chir.ag/projects/name-that-color/
-$brand-text: #0c101c; // Ebony (dark blue)
-$brand-one: #1a2b55; // Nile Blue
-$brand-two: #00a5a4; // Persian Green
-$brand-three: #f8ca14; // Candlelight (yellow)
-$brand-four: #ee3753; // Amaranth (pink)
-$brand-five: #c7d92e; // Pear (green)
-$brand-six: #8b191b; // Falu red
-$brand-seven: #d92726; // Alizarin Crimson (red)
-
-$brand-secondary: #fbfbfb;
+$brand-blue: #1a2b55; // Nile Blue
+$brand-blue--dark: #0c101c; // Ebony (dark blue)
+$brand-green: #00a5a4; // Persian Green
+$brand-green--light: #c7d92e; // Pear (green)
+$brand-yellow: #f8ca14; // Candlelight (yellow)
+$brand-pink: #ee3753; // Amaranth (pink)
+$brand-red: #d92726; // Alizarin Crimson (red)
+$brand-red--dark: #8b191b; // Falu red
 
 // Typography
 $heading-line-height: 1.2;
