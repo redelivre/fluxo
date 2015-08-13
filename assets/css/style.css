@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Site footer */
 .site-footer {
-  background: #1a2b55; }
+  background: #0c101c; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -81,6 +81,14 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.25em;
     font-weight: bold;
     line-height: 1.2; }
+
+/* Development */
+.pane--development {
+  background-color: #00a5a4; }
+
+/* Funding */
+.pane--funding {
+  background-color: #ee3753; }
 
 /*--------------------------------------------------------------
 # Accessibility
