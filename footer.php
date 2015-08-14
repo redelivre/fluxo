@@ -11,7 +11,7 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer small-only-text-center" role="contentinfo">
 		<div class="row">
 			<div class="medium-6 columns">
 				<div class="site-info">
@@ -19,7 +19,7 @@
 				</div><!-- .site-info -->
 			</div>
 			<div class="medium-6 columns">
-				<div class="site-social text-right">
+				<div class="site-social medium-text-right">
 					<a href="#">Transparência</a>
 					<a href="#">Contato</a>
 					<a href="#">GitHub</a>

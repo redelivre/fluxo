@@ -24,13 +24,13 @@ a {
 
 .site-header,
 .site-footer {
-	line-height: 2.938;
 	padding: 1em;
 }
 
 /* Site header */
 .site-header {
 	background: $brand-green--light;
+	line-height: 2.938;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
