@@ -83,6 +83,7 @@ a {
 /* Network */
 .pane--network {
 	background-color: $brand-white;
+	background-image: url('../images/patterns/woof.png');
 
 	.network__item {
 		background: $brand-yellow;
@@ -125,6 +126,7 @@ a {
 /* Services */
 .pane--services {
 	background-color: $brand-yellow;
+	background-image: url('../images/patterns/horizontal.png');
 
 	.service__item {
 		.service__title {
@@ -139,10 +141,12 @@ a {
 /* Development */
 .pane--development {
 	background-color: $brand-green;
+	background-image: url('../images/patterns/vertical--subtle.png');
 }
 
 /* Funding */
 .pane--funding {
 	background-color: $brand-pink;
+	background-image: url('../images/patterns/woof--subtle.png');
 	
 }

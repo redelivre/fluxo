@@ -64,7 +64,8 @@ a {
 
 /* Network */
 .pane--network {
-  background-color: #f8f7fc; }
+  background-color: #f8f7fc;
+  background-image: url("../images/patterns/woof.png"); }
   .pane--network .network__item {
     background: #f8ca14;
     line-height: 1;
@@ -89,7 +90,8 @@ a {
 
 /* Services */
 .pane--services {
-  background-color: #f8ca14; }
+  background-color: #f8ca14;
+  background-image: url("../images/patterns/horizontal.png"); }
   .pane--services .service__item .service__title {
     color: inherit;
     font-size: 1.25em;
@@ -98,11 +100,13 @@ a {
 
 /* Development */
 .pane--development {
-  background-color: #00a5a4; }
+  background-color: #00a5a4;
+  background-image: url("../images/patterns/vertical--subtle.png"); }
 
 /* Funding */
 .pane--funding {
-  background-color: #ee3753; }
+  background-color: #ee3753;
+  background-image: url("../images/patterns/woof--subtle.png"); }
 
 /*--------------------------------------------------------------
 # Accessibility
