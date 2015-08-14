@@ -19,11 +19,10 @@
 				</div><!-- .site-info -->
 			</div>
 			<div class="medium-6 columns">
-				<div class="site-social medium-text-right">
+				<div class="site-social site-navigation site-navigation--footer medium-text-right">
 					<a href="#">Transparência</a>
 					<a href="#">Contato</a>
 					<a href="#">GitHub</a>
-					
 				</div>
 			</div>
 		</div>
