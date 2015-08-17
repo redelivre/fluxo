@@ -337,7 +337,7 @@ class EmRede
 				'show_in_menu' => true,
 				'menu_position' => 5,
 				// 'menu_icon' => '',
-				'capability_type' => array('emrede','emrede'),
+				'capability_type' => 'post',
 				'map_meta_cap' => true,
 				'hierarchical' => false,
 				'supports' => array('title', 'editor', 'author', 'excerpt', 'trackbacks','thumbnail', 'revisions', 'comments'),
