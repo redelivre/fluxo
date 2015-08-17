@@ -121,6 +121,10 @@ function fluxo_scripts() {
 	wp_enqueue_style( 'fluxo-foundation-css' );
 	wp_enqueue_script( 'fluxo-foundation', get_template_directory_uri() . '/assets/js/foundation.min.js', array( 'jquery' ), '5.5.2', true );
 
+	// Google Fonts
+	wp_register_style( 'fluxo-google-fonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic' );
+	wp_enqueue_style( 'fluxo-google-fonts' );
+
 	// Main theme style
 	wp_enqueue_style( 'fluxo-style', get_stylesheet_uri() );
 
