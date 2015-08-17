@@ -1304,4 +1304,9 @@ class EmRede
 
 $EmRede_global = new EmRede();
 
+/**
+ * Custom taxonomies.
+ */
+require dirname(__FILE__) . '/taxs.php';
+
 ?>

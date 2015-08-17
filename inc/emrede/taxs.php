@@ -24,7 +24,7 @@ function register_emrede_taxonomies()
 	);
 	
 	register_taxonomy( 'publico-alvo',array (
-			'pratica'
+			'emrede'
 	),
 			array( 'hierarchical' => true,
 					'label' => 'Público Alvo',
