@@ -29,6 +29,18 @@ jQuery(document).ready(function()
 		jQuery('.emrede-suporte-tempo, .emrede-suporte-esfera').hide();
 	}
 	
+	jQuery(".nova-emrede .iconlist div.icon").click(function () {
+		jQuery(this).find('input').prop('checked', true);
+		jQuery(".nova-emrede .iconlist div.icon").removeClass("active");
+		jQuery(this).addClass("active");
+	});
+	
+	jQuery(".nova-emrede .iconlist div.icon").each(function () {
+		if(jQuery(this).find("input[type='radio']:checked").length > 0)
+		{
+			jQuery(this).addClass("active");
+		}
+	});
 });
 
 
