@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<section class="pane pane--intro pane--reverse">
 			<div class="row">
-				<div class="large-5 columns">
+				<div class="columns text-center">
 					<h2 class="pane__title">Tecnologias sociais para uma sociedade em rede</h2>
 					<p class="lead">A #redelivre é uma articulação entre pessoas e coletivos, hackers e quilombolas, índios e artistas com o objetivo de quebrar o paradigma de que desenvolvimento de software é coisa para especialistas, e ousando conectar estes diversos atores da sociedade para construir coletivamente soluções digitais de alta demanda social.</p>
 				</div>
@@ -27,7 +27,7 @@ get_header(); ?>
 
 		<section class="pane pane--network">
 			<div class="row">
-				<div class="small-12 columns">
+				<div class="columns">
 					<h2 class="text-center pane__title">O impacto da rede</h2>
 					<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dolor similique, possimus, harum in debitis iste quos dicta ipsa aliquid sequi. Voluptate ipsam temporibus, eum doloribus earum consequatur. Itaque, nostrum.</p>
 					<ul class="small-block-grid-2 medium-block-grid-4">
@@ -53,7 +53,7 @@ get_header(); ?>
 		</section>
 		<section class="pane pane--services">
 			<div class="row">
-				<div class="small-12 columns">
+				<div class="columns">
 					<h2 class="text-center pane__title">Serviços desenvolvidos</h2>
 						<p class="lead text-center">Tecnologias sociais para uma sociedade em rede</p>
 						<div class="row">
@@ -102,7 +102,7 @@ get_header(); ?>
 		</section>
 		<section class="pane pane--development">
 			<div class="row">
-				<div class="small-12 columns">
+				<div class="columns">
 					<h2 class="text-center pane__title">Desenvolvimento em rede</h2>
 					<p class="lead text-center">Diagnosticar e sistematizar demandas, especificar tecnologias, definir prioridades, desenvolver, testar e implementar soluções de forma aberta e colaborativa, disponibilizando softwares livres que fortalecam movimentos e organizações culturais e sociais</p>
 				</div>
@@ -110,7 +110,7 @@ get_header(); ?>
 		</section>
 		<section class="pane pane--funding">
 			<div class="row">
-				<div class="small-12 columns">
+				<div class="columns">
 					<h2 class="text-center pane__title">Financiamento</h2>
 					<p class="lead text-center">A redelivre é mantida por aqueles que querem sua existência.</p>
 					<p>Toda tecnologia da #redelivre é livre e gratuita. A grande maioria das organizações utiliza nossos serviços de forma gratuita por não terem condições de colaborar. No entanto, as organizações que possuem uma estrutura financeira melhor contribuem para que a rede possa seguir avançando. Hoje são mais de <strong>40 organizações</strong> colaborando com os custos.</p>
