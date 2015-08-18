@@ -404,11 +404,17 @@ class FluxoSettingsPage
 	    			}
 	    			if($row === false) break;
 	    		}
+	    		
+	    		if( empty(trim($row[0])) || strcasecmp($row[0],'Inexistente') == 0)
+	    		{
+	    			continue;
+	    		}
+	    		
 	    		// definir titulo e descrição
 	    		$post = array(
 	    				'post_author'    => 1, //The user ID number of the author.
-	    				'post_content'   => $row[6],
-	    				'post_title'     => $row[0], //The title of your post.
+	    				'post_content'   => trim($row[6]),
+	    				'post_title'     => trim($row[0]), //The title of your post.
 	    				'post_type'      => 'emrede',
 	    				'post_status'	 => 'publish'
 	    		);
