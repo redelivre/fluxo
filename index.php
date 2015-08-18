@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<section class="pane pane--intro pane--reverse">
 			<div class="row">
-				<div class="columns text-center">
+				<div class="columns large-7 medium-10 medium-centered large-uncentered">
 					<h2 class="pane__title">Tecnologias sociais para uma sociedade em rede</h2>
 					<p class="lead">A #redelivre é uma articulação entre pessoas e coletivos, hackers e quilombolas, índios e artistas com o objetivo de quebrar o paradigma de que desenvolvimento de software é coisa para especialistas, e ousando conectar estes diversos atores da sociedade para construir coletivamente soluções digitais de alta demanda social.</p>
 				</div>
