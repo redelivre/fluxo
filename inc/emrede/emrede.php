@@ -98,7 +98,7 @@ class EmRede
 						'title' => __('Categoria', 'fluxo'),
 						'tip' => __('', 'fluxo'),
 				),*/
-				'É ponto de cultura?' => array
+				'É ponto de cultura? (Sim ou não)' => array
 				(
 						'slug' => 'e-ponto-de-cultura',
 						'title' => __('É ponto de cultura?', 'fluxo'),
@@ -161,7 +161,7 @@ class EmRede
 						'title' => __('location', 'fluxo'),
 						'tip' => __('', 'fluxo'),
 				),*/
-				/*'user_id' => array
+				'user_id' => array
 				(
 						'slug' => '_user_id',
 						'title' => __('user_id', 'fluxo'),
@@ -172,7 +172,7 @@ class EmRede
 						'slug' => '_plan_id',
 						'title' => __('plan_id', 'fluxo'),
 						'tip' => __('', 'fluxo'),
-				),*/
+				),
 				'blog_id' => array
 				(
 						'slug' => '_blog_id',
@@ -191,7 +191,7 @@ class EmRede
 						'title' => __('template', 'fluxo'),
 						'tip' => __('', 'fluxo'),
 				),
-				'stylesheet' => array
+				'styleshee' => array
 				(
 						'slug' => '_stylesheet',
 						'title' => __('stylesheet', 'fluxo'),
@@ -243,6 +243,18 @@ class EmRede
 				(
 						'slug' => '_outros-post-types',
 						'title' => __('outros post types', 'fluxo'),
+						'tip' => __('', 'fluxo'),
+				),
+				'Contribuição contínua(anual)' => array
+				(
+						'slug' => 'contribuicao-continua',
+						'title' => __('Contribuição contínua(anual)', 'fluxo'),
+						'tip' => __('', 'fluxo'),
+				),
+				'Contribuição em projeto' => array
+				(
+						'slug' => 'contribuicao-em-projeto',
+						'title' => __('Contribuição em projeto', 'fluxo'),
 						'tip' => __('', 'fluxo'),
 				),
 		);
@@ -1371,5 +1383,7 @@ $EmRede_global = new EmRede();
  * Custom taxonomies.
  */
 require dirname(__FILE__) . '/taxs.php';
+
+require dirname(__FILE__) . '/../estadoscidades/EstadosCidades.php';
 
 ?>

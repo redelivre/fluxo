@@ -172,3 +172,8 @@ require get_template_directory() . '/inc/customizer.php';
  * Post type emrede.
  */
 require get_template_directory() . '/inc/emrede/emrede.php';
+
+/**
+ * file import options.
+ */
+require get_template_directory() . '/inc/options.php';

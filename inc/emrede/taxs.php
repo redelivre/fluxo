@@ -56,7 +56,7 @@ function register_emrede_taxonomies()
 		wp_insert_term("Produtores, gestores e articuladores culturais", 'publico-alvo');
 		wp_insert_term("professores e lideranças populares", 'publico-alvo');
 		wp_insert_term("Público em Geral", 'publico-alvo');
-		wp_insert_term("rtistas e arte-educadores de coletivos e Pontos de Cultur", 'publico-alvo');
+		wp_insert_term("artistas e arte-educadores de coletivos e Pontos de Cultura", 'publico-alvo');
 		wp_insert_term("Rádios comunitárias", 'publico-alvo');
 		wp_insert_term("Segmentos Populares", 'publico-alvo');
 		wp_insert_term("Outro#input#", 'publico-alvo');
