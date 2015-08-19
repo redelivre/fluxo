@@ -410,6 +410,8 @@ class FluxoSettingsPage
 	    		
 	    		if( (empty($row[0]) && empty($row[1]) ) || strcasecmp($row[0],'Inexistente') == 0)
 	    		{
+	    			$row = fgetcsv( $file, 0, ';');
+	    			$i++;
 	    			continue;
 	    		}
 	    		
