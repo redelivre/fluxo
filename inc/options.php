@@ -436,7 +436,8 @@ class FluxoSettingsPage
 	    		if($getLocation && $location === false)
 	    		{ 
 	    			//lets try address first
-	    			if(!empty(trim($row[22])))
+	    			$row[22] = trim($row[22]);
+	    			if(!empty($row[22]))
 	    			{
 	    				$row[22] = array_shift(explode(';', $row[22]));
 	    				$location = mapasdevista_get_coords($row[22].", ".$row[19].'-'.$row[20]); // Endereço
