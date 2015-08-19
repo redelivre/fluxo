@@ -135,7 +135,10 @@ function fluxo_scripts() {
 	// fullPage.js
 	wp_register_style( 'fluxo-fullpage-css', get_template_directory_uri() . '/assets/css/jquery.fullPage.css', '', '2.6.6' );
 	wp_enqueue_style( 'fluxo-fullpage-css' );
-	wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
+	if(is_home() && !get_query_var('mapa-tpl'))
+	{
+		wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
+	}
 
 	wp_enqueue_script( 'fluxo-scripts', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
 

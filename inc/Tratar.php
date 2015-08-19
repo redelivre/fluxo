@@ -179,6 +179,7 @@ class Tratar
 	public static function tags($postID,$taxonomy,$col1)
 	{
 		$col1 = sanitize_text_field($col1);
+		$col1 = str_replace(';', ',', $col1);
 
 		wp_set_post_tags( $postID, $col1, true );
 		

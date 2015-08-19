@@ -405,7 +405,9 @@ class FluxoSettingsPage
 	    			if($row === false) break;
 	    		}
 	    		
-	    		if( empty(trim($row[0])) || strcasecmp($row[0],'Inexistente') == 0)
+	    		$row[0] = trim($row[0];
+	    		
+	    		if( empty($row[0]) || strcasecmp($row[0],'Inexistente') == 0)
 	    		{
 	    			continue;
 	    		}
