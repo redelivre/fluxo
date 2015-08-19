@@ -15,14 +15,13 @@
 		<div class="row">
 			<div class="medium-6 columns">
 				<div class="site-info">
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fluxo' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'fluxo' ), 'WordPress' ); ?></a>
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'fluxo' ) ); ?>"><?php printf( esc_html__( 'Orgulhosamente desenvolvido com %s', 'fluxo' ), 'WordPress' ); ?></a>
 				</div><!-- .site-info -->
 			</div>
 			<div class="medium-6 columns">
 				<div class="site-social site-navigation site-navigation--footer medium-text-right">
-					<a href="#">Transparência</a>
-					<a href="#">Contato</a>
-					<a href="#">GitHub</a>
+					<a href="<?php echo 'mailto:' . antispambot('contato@redelivre.org.br'); ?>">Contato</a>
+					<a href="https://github.com/redelivre">GitHub</a>
 				</div>
 			</div>
 		</div>

@@ -56,9 +56,19 @@ a {
 /*--------------------------------------------------------------
 # Panels
 --------------------------------------------------------------*/
+.pane__header {
+  margin-bottom: 1.5em; }
+
 .pane__title {
   line-height: 1.2;
   font-weight: bold; }
+
+/* Blocks */
+.block__title {
+  color: inherit;
+  font-size: 1.25em;
+  font-weight: bold;
+  line-height: 1.2; }
 
 /* Introduction */
 .pane--intro {
@@ -98,11 +108,6 @@ a {
 .pane--services {
   background-color: #f8ca14;
   background-image: url("../images/patterns/horizontal.png"); }
-  .pane--services .service__item .service__title {
-    color: inherit;
-    font-size: 1.25em;
-    font-weight: bold;
-    line-height: 1.2; }
 
 /* Development */
 .pane--development {
