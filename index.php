@@ -113,6 +113,27 @@ get_header(); ?>
 						<h2 class="text-center pane__title">Desenvolvimento em rede</h2>
 						<p class="lead text-center">Diagnosticar e sistematizar demandas, especificar tecnologias, definir prioridades, desenvolver, testar e implementar soluções de forma aberta e colaborativa, disponibilizando softwares livres que fortalecam movimentos e organizações culturais e sociais</p>
 					</header>
+
+					<div class="row">
+						<div class="medium-4 columns">
+							<div class="development__item">
+								<h3 class="development__title">Abertura</h3>
+								<p class="development__description">Todas as tecnologias são desenvolvidas integralmente em ambiente aberto e colaborativo, usando o <a href="https://github.com/redelivre">GitHub</a> como plataforma para o desenvolvimento dos softwares produzidos. Com uma comunidade com mais de 10 milhões de pessoas e 25 milhões de projetos, o GitHub permite hospedar, criar e contribuir com ferramentas de código aberto.</p>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="development__item">
+								<h3 class="development__title">Liberdade</h3>
+								<p class="development__description">Todos os projetos da #redelivre estão disponíveis para avaliação, mixagem, cópia e uso indiscriminado. Em cada projeto dentro do GitHub é possível informar erros, fazer perguntas, dar sugestões e discutir futuras funcionalidades. Para os desenvolvedores, há também a capacidade de enviar sugestões de melhorias de código que, depois de avaliadas pela comunidade, podem se tornar parte daquele projeto.</p>
+							</div>
+						</div>
+						<div class="medium-4 columns">
+							<div class="development__item">
+								<h3 class="development__title">Comunicação</h3>
+								<p class="development__description">A #redelivre também utiliza o <a href="http://gitter.im">Gitter</a>, uma ferramenta de conversa em tempo real integrada ao GitHub, como canal de discussão sobre questões de desenvolvimento. As conversas principais ocorrem em uma sala chamada Em rede, mas cada projeto pode ter seu canal de comunicação para trocas de ideias específicas.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
