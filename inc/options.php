@@ -406,10 +406,16 @@ class FluxoSettingsPage
 	    		}
 	    		
 	    		$row[0] = trim($row[0]);
+	    		$row[1] = trim($row[1]);
 	    		
-	    		if( empty($row[0]) || strcasecmp($row[0],'Inexistente') == 0)
+	    		if( (empty($row[0]) && empty($row[1]) ) || strcasecmp($row[0],'Inexistente') == 0)
 	    		{
 	    			continue;
+	    		}
+	    		
+	    		if(empty($row[0]))
+	    		{
+	    			$row[0] = $row[1];
 	    		}
 	    		
 	    		// definir titulo e descrição
