@@ -32,7 +32,7 @@ get_header(); ?>
 				<div class="columns">
 					<header class="pane__header">
 						<h2 class="text-center pane__title">O impacto da rede</h2>
-						<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, dolor similique, possimus, harum in debitis iste quos dicta ipsa aliquid sequi. Voluptate ipsam temporibus, eum doloribus earum consequatur. Itaque, nostrum.</p>
+						<p class="lead text-center">Campanhas, iniciativas sociais e culturais, projetos e pessoas. No Brasil e na América Latina</p>
 					</header>
 					<ul class="small-block-grid-2 medium-block-grid-4">
 						<li class="network__item">
