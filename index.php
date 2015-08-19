@@ -35,19 +35,19 @@ get_header(); ?>
 						<p class="lead text-center">Campanhas, iniciativas sociais e culturais, projetos e pessoas. No Brasil e na América Latina</p>
 					</header>
 					<ul class="small-block-grid-2 medium-block-grid-4">
-						<li class="network__item">
+						<li class="network__item block__item">
 							<span class="network__number">7</span>
 							<span class="network__text">países</span>
 						</li>
-						<li class="network__item">
+						<li class="network__item block__item">
 							<span class="network__number">40</span>
 							<span class="network__text">cidades</span>
 						</li>
-						<li class="network__item">
+						<li class="network__item block__item">
 							<span class="network__number">280</span>
 							<span class="network__text">projetos</span>
 						</li>
-						<li class="network__item">
+						<li class="network__item block__item">
 							<span class="network__number">4k</span>
 							<span class="network__text">usuários</span>
 						</li>
@@ -64,41 +64,41 @@ get_header(); ?>
 					</header>
 						<div class="row">
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Websites</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Websites</h3>
+									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Participação social</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim, magnam voluptates itaque, debitis necessitatibus vero, explicabo distinctio cumque repellat exercitationem dicta laborum corporis excepturi! Cumque quas eaque, perspiciatis minus?</p>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Participação social</h3>
+									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim, magnam voluptates itaque, debitis necessitatibus vero, explicabo distinctio cumque repellat exercitationem dicta laborum corporis excepturi! Cumque quas eaque, perspiciatis minus?</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Plataformas de deliberação online</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem tempora consectetur illo nostrum, ex cupiditate quos aspernatur earum, minima distinctio dolorum porro inventore officia iure obcaecati a eum totam.</p>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Plataformas de deliberação online</h3>
+									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem tempora consectetur illo nostrum, ex cupiditate quos aspernatur earum, minima distinctio dolorum porro inventore officia iure obcaecati a eum totam.</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="row">
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Comunicação digital</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Comunicação digital</h3>
+									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Envio de email e SMS</h3>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Envio de email e SMS</h3>
 									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci eius ea cumque minima recusandae est beatae, voluptates? Earum, incidunt, repellat. Laboriosam nihil vero aspernatur aliquam delectus commodi, id error.</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
-								<div class="service__item">
-									<h3 class="service__title">Sistemas de contribuição</h3>
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Sistemas de contribuição</h3>
 									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dignissimos eveniet eos animi placeat natus iusto molestias, eius quidem sint tempora cupiditate rerum illum accusamus illo vitae quas, dolor hic!</p>
 								</div>
 							</div>
@@ -116,21 +116,21 @@ get_header(); ?>
 
 					<div class="row">
 						<div class="medium-4 columns">
-							<div class="development__item">
-								<h3 class="development__title">Abertura</h3>
+							<div class="development__item block__item">
+								<h3 class="development__title block__title">Abertura</h3>
 								<p class="development__description">Todas as tecnologias são desenvolvidas integralmente em ambiente aberto e colaborativo, usando o <a href="https://github.com/redelivre">GitHub</a> como plataforma para o desenvolvimento dos softwares produzidos. Com uma comunidade com mais de 10 milhões de pessoas e 25 milhões de projetos, o GitHub permite hospedar, criar e contribuir com ferramentas de código aberto.</p>
 							</div>
 						</div>
 						<div class="medium-4 columns">
-							<div class="development__item">
-								<h3 class="development__title">Liberdade</h3>
-								<p class="development__description">Todos os projetos da #redelivre estão disponíveis para avaliação, mixagem, cópia e uso indiscriminado. Em cada projeto dentro do GitHub é possível informar erros, fazer perguntas, dar sugestões e discutir futuras funcionalidades. Para os desenvolvedores, há também a capacidade de enviar sugestões de melhorias de código que, depois de avaliadas pela comunidade, podem se tornar parte daquele projeto.</p>
+							<div class="development__item block__item">
+								<h3 class="development__title block__title">Liberdade</h3>
+								<p class="development__description block__description">Todos os projetos da #redelivre estão disponíveis para avaliação, mixagem, cópia e uso indiscriminado. Em cada projeto dentro do GitHub é possível informar erros, fazer perguntas, dar sugestões e discutir futuras funcionalidades. Para os desenvolvedores, há também a capacidade de enviar sugestões de melhorias de código que, depois de avaliadas pela comunidade, podem se tornar parte daquele projeto.</p>
 							</div>
 						</div>
 						<div class="medium-4 columns">
-							<div class="development__item">
-								<h3 class="development__title">Comunicação</h3>
-								<p class="development__description">A #redelivre também utiliza o <a href="http://gitter.im">Gitter</a>, uma ferramenta de conversa em tempo real integrada ao GitHub, como canal de discussão sobre questões de desenvolvimento. As conversas principais ocorrem em uma sala chamada Em rede, mas cada projeto pode ter seu canal de comunicação para trocas de ideias específicas.</p>
+							<div class="development__item block__item">
+								<h3 class="development__title block__title">Comunicação</h3>
+								<p class="development__description block__description">A #redelivre também utiliza o <a href="http://gitter.im">Gitter</a>, uma ferramenta de conversa em tempo real integrada ao GitHub, como canal de discussão sobre questões de desenvolvimento. As conversas principais ocorrem em uma sala chamada Em rede, mas cada projeto pode ter seu canal de comunicação para trocas de ideias específicas.</p>
 							</div>
 						</div>
 					</div>

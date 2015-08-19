@@ -83,6 +83,14 @@ a {
 	font-weight: bold;
 }
 
+/* Blocks */
+.block__title {
+	color: inherit;
+	font-size: 1.25em;
+	font-weight: bold;
+	line-height: $heading-line-height;
+}
+
 /* Introduction */
 .pane--intro {
 	background: $brand-blue url('../images/contra-a-reducao.jpg') no-repeat;
@@ -141,15 +149,6 @@ a {
 .pane--services {
 	background-color: $brand-yellow;
 	background-image: url('../images/patterns/horizontal.png');
-
-	.service__item {
-		.service__title {
-			color: inherit;
-			font-size: 1.25em;
-			font-weight: bold;
-			line-height: $heading-line-height;
-		}
-	}
 }
 
 /* Development */
