@@ -74,6 +74,10 @@ a {
 # Panels
 --------------------------------------------------------------*/
 
+.pane__header {
+	margin-bottom: 1.5em;
+}
+
 .pane__title {
 	line-height: $heading-line-height;
 	font-weight: bold;
