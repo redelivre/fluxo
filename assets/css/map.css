@@ -2,7 +2,6 @@
 
 .filter-panel {
 	background-color: #2f2d44;
-	color: #fff;
 	height: 100%;
 	opacity: 0.9;
 	overflow-y: auto;
@@ -15,6 +14,42 @@
 	font-weight: bold;
 	margin: 0 0 1em;
 }
+
+.filter-panel-tooglebox {
+	
+	background-color: #faba09;
+	border: 0;
+	border-radius: 0;
+	padding: 0.5em;
+	position: relative;
+	text-indent: 0.01px;
+    text-overflow: '';
+	width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	color: rgba(0, 0, 0, 0.75);
+    font-family: inherit;
+    font-size: 0.875rem;
+}
+
+.filter-panel-tooglebox-button {
+	background-position: center center;
+    background-repeat: no-repeat;
+    display: block;
+    float: right;
+    margin-right: 9px;
+    min-height: 29px;
+    min-width: 29px;
+}
+
+.icon-down.filter-panel-tooglebox-button {
+	background-image: url('../images/icon-down.png');
+}
+
+.icon-up.filter-panel-tooglebox-button {
+	background-image: url('../images/icon-up.png');
+}
+
 
 .filter-panel-tooglebox,
 .filter-panel select {
@@ -61,7 +96,7 @@
 
 .filter-panel-tooglebox-meta-head:hover,
 .filter-panel-tooglebox-list label:hover {
-	color: #faba09;
+	color: #fff;
 	cursor: pointer;
 }
 
@@ -83,14 +118,6 @@
 .filter-panel-tooglebox-list label {
 	font-size: 0.875em;
     margin-right: 0.5em;
-}
-
-.icon-up:before {
-	content: '\e802';
-}
-
-.icon-down:before {
-	content: '\e804';
 }
 
 .taxonomy-filter-checkbox-wrapper {

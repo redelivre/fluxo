@@ -97,8 +97,7 @@ class FluxoSettingsPage
         
 		if(array_key_exists('page', $_REQUEST) && $_REQUEST['page'] == 'fluxo-import-file')
 		{
-			$path = get_template_directory_uri() . '/js';
-			wp_register_script('fluxo_import_scripts', $path . '/fluxo_import_scripts.js', array('jquery'));
+			wp_register_script('fluxo_import_scripts', get_template_directory_uri() . '/assets/js/fluxo_import_scripts.js', array('jquery'));
 			
 			wp_enqueue_script('fluxo_import_scripts');
 					
