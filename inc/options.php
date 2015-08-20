@@ -315,8 +315,8 @@ class FluxoSettingsPage
     	{
     		include_once dirname(__FILE__).'/Tratar.php';
     		
-    		$debug = false;
-    		$getLocation = true;
+    		$debug = true;
+    		$getLocation = false;
     		$begin = 0;
     		$limit = 2;
     		$ids = array();
@@ -521,11 +521,11 @@ class FluxoSettingsPage
     					{
 	    					if($debug)
 	    					{
-	    						FluxoSettingsPage::log("update_post_meta($post_id, {$names[0][$key]}, $custom_field);<br/>");
+	    						FluxoSettingsPage::log("update_post_meta($post_id, {$fields[$names[0][$key]]['slug']}, $custom_field);<br/>");
 	    					}
 	    					else 
 	    					{
-	    						update_post_meta($post_id, $names[0][$key], $custom_field);
+	    						update_post_meta($post_id, $fields[$names[0][$key]]['slug'], $custom_field);
 	    					}
     					}
     					else
