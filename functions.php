@@ -131,13 +131,28 @@ function fluxo_scripts() {
 	// Main theme style
 	wp_register_style( 'fluxo-style-main', get_template_directory_uri() . '/assets/css/style.css' );
 	wp_enqueue_style( 'fluxo-style-main');
+	
+	// Map style
+	wp_register_style( 'fluxo-map', get_template_directory_uri() . '/assets/css/map.css' );
+	wp_register_script('map-functions', get_template_directory_uri() . '/assets/js/map-functions.js', array('jquery'));
+	wp_register_script('map-page-scripts', get_template_directory_uri() . '/assets/js/map-page-scripts.js', array('jquery', 'map-functions'));
+	
+	if(is_home() && get_query_var('mapa-tpl')) // is on /mapa
+	{
+		wp_enqueue_style( 'fluxo-map');
+		wp_enqueue_script('map-page-scripts');
+		wp_enqueue_script('map-functions');
+	}
 
 	// fullPage.js
 	wp_register_style( 'fluxo-fullpage-css', get_template_directory_uri() . '/assets/css/jquery.fullPage.css', '', '2.6.6' );
 	wp_enqueue_style( 'fluxo-fullpage-css' );
-	wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
-
-	wp_enqueue_script( 'fluxo-scripts', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
+	
+	if(is_home() && !get_query_var('mapa-tpl'))
+	{
+		wp_enqueue_script( 'fluxo-fullpage', get_template_directory_uri() . '/assets/js/jquery.fullPage.min.js', array( 'jquery' ), '2.6.7', true );
+		wp_enqueue_script( 'fluxo-scripts', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), '', true );
+	}
 
 	// Grunt watch livereload in the browser.
 	wp_enqueue_script( 'fluxo-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
@@ -167,3 +182,13 @@ require get_template_directory() . '/inc/extras.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
+
+/**
+ * Post type emrede.
+ */
+require get_template_directory() . '/inc/emrede/emrede.php';
+
+/**
+ * file import options.
+ */
+require get_template_directory() . '/inc/options.php';

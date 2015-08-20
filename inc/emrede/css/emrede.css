@@ -1,0 +1,303 @@
+@CHARSET "UTF-8";
+
+.taxonomy-checkbox-group-col {
+    display: block;
+    float: left;
+    min-width: 33%;
+    padding: 0.25em 1em;
+}
+
+.emrede-item-label, .emrede-item {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.taxonomy-label-group-col-input {
+	display: block;
+    float: left;
+}
+
+input[type="text"].taxonomy-checkbox-text  {
+	display: block;
+    float: left;
+    width: 80%;
+    padding: 0.2em 0.4em 0.2em 0.6em;
+    background-color: #dcd800;
+    border-radius: 15px; 
+}
+
+
+.login-entry .container {
+    max-width: 600px;
+}
+
+.login-entry {
+	background-color: #dcd800;
+}
+
+.login-username label,.login-password label {
+    font-weight: bold;
+}
+
+.login-entry .login-remember {
+    display: block;
+    float: left;
+    margin-left: 60%;
+    margin-top: 0.6em;
+}
+
+.login-entry .login-submit {
+    display: block;
+    float: right;
+}
+
+.login-entry .sections-advise,.home-entry .sections-advise{
+    font-size: 0.65em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+.login-entry .sections-description,.home-entry .sections-description {
+    color: #501651;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login-register {
+    display: block;
+    margin-top: 9px;
+    position: absolute;
+    width: 130px;
+}
+
+.login-register > a {
+    color: #805783;
+}
+
+.login-register > a:HOVER {
+    color: #2f2d44;
+}
+
+.nova-emrede .container {
+    max-width: 1080px;
+}
+
+.home-entry.nova-emrede {
+    background-color: #dcd800;
+}
+
+.emrede-item-title {
+    font-weight: bold;
+    padding-left: 0.5em;
+}
+
+.emrede-item-tip-text {
+    font-size: 0.8em;
+    padding-left: 0.7em;
+}
+
+.emrede-item-input-text {
+    border-radius: 12px;
+}
+
+h2.new-emrede {
+    font-size: 1.2em;
+    text-align: center;
+    color: #501651;
+}
+
+.dropdown-estado,
+.dropdown-cidade,
+.emrede-item-input-dropdown {
+   display: block;
+   float: left;
+   overflow: hidden;
+   background: url(../../../images/new_arrow.png) no-repeat right #faba09;
+   width: 25%;
+   border-radius: 15px;
+}
+
+.dropdown-estado select,
+.dropdown-cidade select,
+.emrede-item-input-dropdown select {
+   background: transparent;
+   padding: 0.5em;
+   border: 0;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   width: 100%;
+}
+
+div.dropdown-cidade {
+    margin-left: 2em;
+}
+
+.emrede-item-checkbox {
+    /*background-color: #bab700;*/
+}
+
+ul.parent, div.emrede-item-input-radio-block, div.emrede-item-input-checkbox-block {
+    background-color: #faba09;
+    display: block;
+    float: left;
+    margin-top: 0;
+    padding: 0.25em 1em 0.25em 0;
+    border-radius: 20px;
+}
+
+.emrede-item-input-radio, .emrede-item-input-checkbox {
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+.emrede-item-input-radio-block > input, .emrede-item-input-checkbox-block > input {
+    margin-left: 1.25em;
+}
+
+.dropdown-emrede-suporte-tempo {
+    margin-right: 2em;
+}
+
+.nova-emrede .medium-field {
+    border-radius: 15px;
+    margin-right: 1em;
+}
+
+.nova-emrede .large-field {
+    border-radius: 15px;
+}
+
+.nova-emrede fieldset {
+	border: none;
+}
+
+.emrede-map-block {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.nova-emrede .iconlist div.icon {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 35px;
+    border-width: 3px;
+    height: auto;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.nova-emrede .iconlist div.icon:hover, .nova-emrede .iconlist div.icon.active {
+	border-color: #2d115c;
+}
+
+.nova-emrede .icon-info {
+    display: none;
+}
+
+.publish-button-block {
+	width: 100%;
+	display: block;
+	float: left;
+	margin-top: 2em;
+}
+
+.nova-emrede .images {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.images-thumbnail-block {
+    background-color: #faba09;
+    border-color: #d27f29;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 3px;
+    float: left;
+    margin: 5px;
+    overflow: hidden;
+    padding: 0 0 1em;
+    position: relative;
+    text-align: center;
+    width: 32%;
+    
+}
+
+input.emrede-file-upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.emrede-suporte-tempo, .emrede-suporte-esfera {
+	display: none;
+}
+
+.emrede-map-block fieldset:first-of-type {
+    display: none;
+}
+
+.emrede-highlight-label {
+    display: block;
+    float: left;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-top: 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.new-emrede-sucess {
+	display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+}
+
+.error {
+    background-color: #faba09;
+    border-radius: 20px;
+    color: #9e0b0f;
+    padding: 1em;
+}
+
+.error div {
+	font-weight: bold;
+}
+
+.error p {
+    margin: 0;
+}
+
+.error div:hover {
+    color: #501651;
+    cursor: pointer;
+}
+
+.error-msn-pre {
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+}
+
+.nova-emrede .iconlist div.icon {
+    width: auto;
+}
+
+.nova-emrede .iconlist div.icon div.icon-image {
+	height: auto;
+}
+
+.nova-emrede .icon-image {
+	
+}
