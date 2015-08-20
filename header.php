@@ -21,7 +21,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site js-fullpage">
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header small-only-text-center" role="banner">
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fluxo' ); ?></a>
 		
 		<div class="row">
@@ -37,7 +37,7 @@
 			</div>
 
 			<div class="medium-6 columns">
-				<nav id="site-navigation" class="site-navigation site-navigation--main text-right" role="navigation">
+				<nav id="site-navigation" class="site-navigation site-navigation--main medium-text-right" role="navigation">
 					<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 					<a href="<?php echo wp_registration_url(); ?>">Cadastre-se</a>
 					<?php wp_loginout(); ?>
