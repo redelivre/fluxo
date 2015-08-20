@@ -118,19 +118,19 @@ get_header(); ?>
 						<div class="medium-4 columns">
 							<div class="development__item block__item">
 								<h3 class="development__title block__title">Abertura</h3>
-								<p class="development__description">Todas as tecnologias são desenvolvidas integralmente em ambiente aberto e colaborativo, usando o <a href="https://github.com/redelivre">GitHub</a> como plataforma para o desenvolvimento dos softwares produzidos. Com uma comunidade com mais de 10 milhões de pessoas e 25 milhões de projetos, o GitHub permite hospedar, criar e contribuir com ferramentas de código aberto.</p>
+								<p class="development__description">Todas as tecnologias são desenvolvidas integralmente em ambiente aberto e colaborativo, usando o <a href="https://github.com/redelivre">GitHub</a>. Com uma comunidade com mais de 10 milhões de pessoas e 25 milhões de projetos, o GitHub permite hospedar, criar e contribuir com ferramentas de código aberto.</p>
 							</div>
 						</div>
 						<div class="medium-4 columns">
 							<div class="development__item block__item">
 								<h3 class="development__title block__title">Liberdade</h3>
-								<p class="development__description block__description">Todos os projetos da #redelivre estão disponíveis para avaliação, mixagem, cópia e uso indiscriminado. Em cada projeto dentro do GitHub é possível informar erros, fazer perguntas, dar sugestões e discutir futuras funcionalidades. Para os desenvolvedores, há também a capacidade de enviar sugestões de melhorias de código que, depois de avaliadas pela comunidade, podem se tornar parte daquele projeto.</p>
+								<p class="development__description block__description">Os projetos da #redelivre estão disponíveis para adaptação, cópia e uso indiscriminado, e em cada um deles é possível informar erros, fazer perguntas, dar sugestões e discutir futuras funcionalidades. Desenvolvedores podem enviar melhorias de código que, depois de avaliadas pela comunidade, podem se tornar parte daquele projeto.</p>
 							</div>
 						</div>
 						<div class="medium-4 columns">
 							<div class="development__item block__item">
 								<h3 class="development__title block__title">Comunicação</h3>
-								<p class="development__description block__description">A #redelivre também utiliza o <a href="http://gitter.im">Gitter</a>, uma ferramenta de conversa em tempo real integrada ao GitHub, como canal de discussão sobre questões de desenvolvimento. As conversas principais ocorrem em uma sala chamada Em rede, mas cada projeto pode ter seu canal de comunicação para trocas de ideias específicas.</p>
+								<p class="development__description block__description">A #redelivre também utiliza o <a href="http://gitter.im">Gitter</a>, uma ferramenta de conversa em tempo real integrada ao GitHub, como canal de discussão sobre questões de desenvolvimento. Cada projeto pode ter seu canal de comunicação para trocas de ideias específicas.</p>
 							</div>
 						</div>
 					</div>
@@ -142,9 +142,9 @@ get_header(); ?>
 				<div class="columns">
 					<header class="pane__header">
 						<h2 class="text-center pane__title">Financiamento</h2>
-						<p class="lead text-center">A redelivre é mantida por aqueles que querem sua existência.</p>
+						<p class="lead text-center">A redelivre é mantida por aqueles que querem sua existência</p>
 					</header>
-					<p>Toda tecnologia da #redelivre é livre e gratuita. A grande maioria das organizações utiliza nossos serviços de forma gratuita por não terem condições de colaborar. No entanto, as organizações que possuem uma estrutura financeira melhor contribuem para que a rede possa seguir avançando. Hoje são mais de <strong>40 organizações</strong> colaborando com os custos.</p>
+					<p>Toda tecnologia desenvolvida é livre e gratuita. As pessoas e as organizações que possuem condição de colaborar com os custos o fazem para que aquelas que não tem estrutura financeira tenham também a oportunidade de usar as tecnologias criadas. Hoje são mais de <strong>40 financiadores</strong>. É assim que a redelivre evolui.</p>
 				</div>
 			</div>
 		</section>
