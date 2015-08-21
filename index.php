@@ -66,19 +66,19 @@ get_header(); ?>
 							<div class="medium-4 columns">
 								<div class="service__item block__item">
 									<h3 class="service__title block__title">Websites</h3>
-									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora illum quas repellat? Debitis, dolor earum quisquam? Sequi reprehenderit quae at esse inventore nam tenetur consequatur, error accusantium! Ullam, rem saepe.</p>
+									<p class="service__description block__description">Crie, desenvolva e compartilhe suas iniciativas através de um website ou blog</p>
+								</div>
+							</div>
+							<div class="medium-4 columns">
+								<div class="service__item block__item">
+									<h3 class="service__title block__title">Envio de email e SMS</h3>
+									<p class="service__description">Envie de forma rápida e fácil emails ou mensagens de celular para seus contatos</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
 								<div class="service__item block__item">
 									<h3 class="service__title block__title">Participação social</h3>
-									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam enim, magnam voluptates itaque, debitis necessitatibus vero, explicabo distinctio cumque repellat exercitationem dicta laborum corporis excepturi! Cumque quas eaque, perspiciatis minus?</p>
-								</div>
-							</div>
-							<div class="medium-4 columns">
-								<div class="service__item block__item">
-									<h3 class="service__title block__title">Plataformas de deliberação online</h3>
-									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dolorem tempora consectetur illo nostrum, ex cupiditate quos aspernatur earum, minima distinctio dolorum porro inventore officia iure obcaecati a eum totam.</p>
+									<p class="service__description block__description">Utilize ferramentas para tomada de decisão coletiva, consultas públicas e metodologias de colaboração</p>
 								</div>
 							</div>
 						</div>
@@ -86,20 +86,21 @@ get_header(); ?>
 						<div class="row">
 							<div class="medium-4 columns">
 								<div class="service__item block__item">
-									<h3 class="service__title block__title">Comunicação digital</h3>
-									<p class="service__description block__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eligendi mollitia praesentium quis aut perspiciatis, libero, quam quaerat sapiente laudantium aliquid quod necessitatibus quas doloribus iste ducimus, soluta, amet nemo?</p>
+									<h3 class="service__title block__title">Financiamento online</h3>
+									<p class="service__description block__description">Financie coletivamente o sua organização ou projeto através do seu próprio site</p>
 								</div>
 							</div>
 							<div class="medium-4 columns">
 								<div class="service__item block__item">
-									<h3 class="service__title block__title">Envio de email e SMS</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam adipisci eius ea cumque minima recusandae est beatae, voluptates? Earum, incidunt, repellat. Laboriosam nihil vero aspernatur aliquam delectus commodi, id error.</p>
+									<h3 class="service__title block__title">Mapas colaborativos</h3>
+									<p class="service__description block__description">Crie facilmente mapas colaborativos para sua rede, projetos ou qualquer iniciativa</p>
 								</div>
 							</div>
+							
 							<div class="medium-4 columns">
 								<div class="service__item block__item">
-									<h3 class="service__title block__title">Sistemas de contribuição</h3>
-									<p class="service__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero dignissimos eveniet eos animi placeat natus iusto molestias, eius quidem sint tempora cupiditate rerum illum accusamus illo vitae quas, dolor hic!</p>
+									<h3 class="service__title block__title">Formação</h3>
+									<p class="service__description">Participe das atividades de formação práticas e teóricas sobre softwares e metodologias livres</p>
 								</div>
 							</div>
 						</div>
