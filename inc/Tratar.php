@@ -79,11 +79,16 @@ class Tratar
 				foreach ($estados as $estado)
 				{
 					$descs[trim($estado->description)] = $estado->term_id;
+					$descs[self::FormatText($estado->description)] = $estado->term_id;
 				}
 				
 				if( array_key_exists($uf, $descs) )
 				{
 					wp_set_object_terms( $postID, intval($descs[$uf]), $taxonomy, true );
+				}
+				elseif( array_key_exists(self::FormatText($uf), $descs) )
+				{
+					wp_set_object_terms( $postID, intval($descs[self::FormatText($uf)]), $taxonomy, true );
 				}
 				else 
 				{
@@ -115,12 +120,12 @@ class Tratar
 		}	
 	}
 
-	public static function publicoalvo($postID,$taxonomy,$col1,$col2=false,$col3=false)
+	public static function publicoalvo($postID,$taxonomy,$col1)
 	{
 		$col1 = Tratar::FormatText($col1);
-		$col2 = Tratar::FormatText($col2);
-		$col3 = Tratar::FormatText($col3);
 	
+		if(empty($col1)) return;
+		
 		$rel = array(
 				Tratar::FormatText("Coletivos, artistas") => "Coletivos, artistas",
 				Tratar::FormatText("comunidades") => "comunidades",
@@ -156,30 +161,19 @@ class Tratar
 		{
 			Tratar::insert($postID, $taxonomy, $rel[$col1]);
 		}
-		if(array_key_exists($col2, $rel) && is_array($rel[$col2]) && method_exists('Tratar', reset($rel[$col2])))
+		else
 		{
-			$func = reset($rel[$col2]);
-			Tratar::$func($postID, reset($rel[$col2]), key($rel[$col2]));
+			Tratar::insert($postID, $taxonomy, $rel['outro']);
 		}
-		elseif(array_key_exists($col2, $rel) && $rel[$col2] != "")
-		{
-			Tratar::insert($postID, $taxonomy, $rel[$col2]);
-		}
-		if(array_key_exists($col3, $rel) && is_array($rel[$col3]) && method_exists('Tratar', reset($rel[$col3])))
-		{
-			$func = reset($rel[$col3]);
-			Tratar::$func($postID, reset($rel[$col3]), key($rel[$col3]));
-		}
-		elseif(array_key_exists($col3, $rel) && $rel[$col3] != "")
-		{
-			Tratar::insert($postID, $taxonomy, $rel[$col3]);
-		}
+		
 	}
 	
 	public static function tags($postID,$taxonomy,$col1)
 	{
 		$col1 = sanitize_text_field($col1);
 		$col1 = str_replace(';', ',', $col1);
+		
+		if(empty($col1)) return;
 
 		wp_set_post_tags( $postID, $col1, true );
 		

@@ -35,7 +35,7 @@ class EmRede
 						'title' => __('Situação', 'fluxo'),
 						'tip' => __('', 'fluxo'),
 						'type' => 'radio',
-						'values' => array('ativo' => __('Ativo', 'fluxo' ), 'inativo' => __('Inativo', 'fluxo' ), 'inexistente' => __('Inexistente', 'fluxo' ) )
+						'values' => array('Ativo' => __('Ativo', 'fluxo' ), 'Em desenvolvimento' => __('Em desenvolvimento', 'fluxo' ) )
 				),
 				'Carta de apoio' => array
 				(

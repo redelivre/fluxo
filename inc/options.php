@@ -40,7 +40,6 @@ class FluxoSettingsPage
 	{
 		// Set class property
 		$this->options = get_option( 'fluxo_theme_options', array() );
-		//$this->ImportPins();
 		?>
         <div class="wrap">
             <h2><?php _e('Import File Tool', 'fluxo') ?></h2>           
@@ -51,6 +50,7 @@ class FluxoSettingsPage
                 do_settings_sections( 'fluxo-import-file' );
                 submit_button("Check Estado/Cidades", 'secundary', 'check-estado-cidade' );
                 submit_button("Importar Csv", 'secundary', 'importcsv' );
+                submit_button("Importar Pins", 'secundary', 'importpins' );
                 submit_button(); 
             ?>
             </form>
@@ -85,13 +85,6 @@ class FluxoSettingsPage
             'fluxo-import-file', // Page
             'setting_estatos_cidades' // Section           
         );
-        add_settings_field(
-	        'pins_imported', // ID
-	        '', // Title
-	        array( $this, 'pins_imported_callback' ), // Callback
-	        'fluxo-import-file', // Page
-	        'setting_estatos_cidades' // Section
-        );
         
         update_option('setting_estatos_cidades', 'N');
         
@@ -105,9 +98,9 @@ class FluxoSettingsPage
 			array( 'ajax_url' => admin_url( 'admin-ajax.php' )) );
 		}
 		add_action( 'wp_ajax_ImportarCsv', array($this, 'ImportarCsv_callback') );
+		add_action( 'wp_ajax_ImportPins', array($this, 'ImportPins') );
 		add_action( 'wp_ajax_CheckEstadoCidade', array('EstadosCidades', 'check_location_terms') );
 		
-		//add_action( 'wp_ajax_nopriv_ImportarCsv', array($this, 'ImportarCsv_callback') );
     }
 
     /**
@@ -158,17 +151,6 @@ class FluxoSettingsPage
             <input type="checkbox" id="criar_estatos_cidades" name="fluxo_theme_options[criar_estatos_cidades]" value="S" <?php echo $checked; ?> /><?php _e('Criar', 'fluxo'); ?>
         <?php 
     }
-    
-    /**
-     * Get the settings option array and print one of its values
-     */
-    public function pins_imported_callback()
-    {
-    	$checked = isset( $this->options['pins_imported'] ) && $this->options['pins_imported'] == 'S' ? 'checked="checked"' : '';
-    	?>
-        	<input type="hidden" id="pins_imported" name="fluxo_theme_options[pins_imported]" value="<?php echo isset( $this->options['pins_imported'] ) && $this->options['pins_imported'] ? 'true' : 'false' ;?>" />
-        <?php 
-	}
     
     public function fetch_remote_file( $url, $post ) {
     
@@ -249,36 +231,32 @@ class FluxoSettingsPage
     
     public function ImportPins()
     {
-    	if(!array_key_exists('pins_imported', $this->options) || $this->options['pins_imported'] === false )
-    	{
-	    	if ($handle = opendir(WP_CONTENT_DIR . '/themes/recid/images/pins'))
+    	if ($handle = opendir(get_stylesheet_directory() . '/assets/images/pins'))
+		{
+    		while (false !== ($entry = readdir($handle)))
 			{
-	    		while (false !== ($entry = readdir($handle)))
+    			if (substr($entry, -3) == "png")
 				{
-	    			if (substr($entry, -3) == "png")
-					{
-	    				$newatt = array
-						(
-	    					'post_title' => $entry,
-	    					'post_status' => 'publish',
-	    					'post_parent' => 0,
-	    					'post_type' => 'attachment'
-	    				);
-							    	
-	    				$ret = $this->process_attachment( $newatt, get_template_directory_uri().'/images/pins/'.$entry);
-	    				if(is_object($ret) && get_class($ret) == 'WP_Error')
-	    				{
-	    					
-	    					wp_die(print_r($ret, true)." URL:".get_template_directory_uri().'/images/pins/'.$entry);
-	    				}
-	    	
-	    			}
-	    		}
-	    		closedir($handle);
-	    		$this->options['pins_imported'] = true;
-	    		update_option('fluxo_theme_options', $this->options);
-	    	}
+    				$newatt = array
+					(
+    					'post_title' => $entry,
+    					'post_status' => 'publish',
+    					'post_parent' => 0,
+    					'post_type' => 'attachment'
+    				);
+						    	
+    				$ret = $this->process_attachment( $newatt, get_template_directory_uri().'/assets/images/pins/'.$entry);
+    				if(is_object($ret) && get_class($ret) == 'WP_Error')
+    				{
+    					
+    					wp_die(print_r($ret, true)." URL:".get_template_directory_uri().'/assets/images/pins/'.$entry);
+    				}
+    	
+    			}
+    		}
+    		closedir($handle);
     	}
+    	die();//ajax callback
     }
     
     protected $logfilename = 'csv_import.log';
@@ -315,9 +293,9 @@ class FluxoSettingsPage
     		include_once dirname(__FILE__).'/Tratar.php';
     		
     		$debug = true;
-    		$getLocation = false;
+    		$getLocation = true;
     		$begin = 0;
-    		$limit = 2;
+    		$limit = 20;
     		$ids = array();
     		
     		$pins_args = array (
@@ -329,31 +307,11 @@ class FluxoSettingsPage
 			
 			$pins = array();
 			
-			/*foreach ($pinsTodos as $pin)
+			foreach ($pinsTodos as $pin)
 			{
-				FluxoSettingsPage::log($pin->post_name);
-				switch ($pin->post_name)
-				{
-					case 'ambiental-png':
-						$pins['ambiental'] = $pin->ID;
-					break;
-					case 'civil-png':
-						$pins['civil'] = $pin->ID;
-					break;
-					case 'cultura-png':
-						$pins['cultural'] = $pin->ID;
-					break;
-					case 'economico-png':
-						$pins['economico'] = $pin->ID;
-					break;
-					case 'politico-png':
-						$pins['politico'] = $pin->ID;
-					break;
-					case 'social-png':
-							$pins['social'] = $pin->ID;
-					break;						
-				}
-			}*/
+				$pins[] = $pin->ID;
+			}
+			
 			FluxoSettingsPage::log(print_r($pins,true));
 			
 	    	ini_set("memory_limit", "2048M");
@@ -440,23 +398,34 @@ class FluxoSettingsPage
 	    			$location = $coords[$row[1]];
 	    		}
 	    		
+	    		$row[19] = trim($row[19]);
+	    		$row[20] = trim($row[20]);
+	    		$row[21] = trim($row[21]);
+	    		$row[22] = trim($row[22]);
+	    		
+	    		$row[19] = trim(array_shift(explode(';', $row[19])));
+	    		$row[19] = trim(array_shift(explode(',', $row[19])));
+	    		$row[19] = trim(array_shift(explode('-', $row[19])));
 	    		if($getLocation && $location === false)
 	    		{ 
 	    			//lets try address first
-	    			$row[22] = trim($row[22]);
+	    			$uf = $row[20];
+	    			if(!empty($row[21])) // país
+	    				$uf .=  ",".$row[21];
+	    			
 	    			if(!empty($row[22]))
 	    			{
 	    				$row[22] = array_shift(explode(';', $row[22]));
-	    				$location = mapasdevista_get_coords($row[22].", ".$row[19].'-'.$row[20]); // Endereço
+	    				$location = mapasdevista_get_coords($row[22].",".$row[19].','.$uf); // Endereço
 	    				if($location == false)
 	    				{
-	    					$location = mapasdevista_get_coords($row[19].'-'.$row[20]); // Município e estado
+	    					$location = mapasdevista_get_coords($row[19].','.$uf); // Município e estado
 	    				}
 	    			}
 	    			else
 	    			{
 		    			//setar coluna do municipio
-			    		$location = mapasdevista_get_coords($row[19].'-'.$row[20]); // Município e estado
+			    		$location = mapasdevista_get_coords($row[19].','.$uf); // Município e estado
 	    			}
 	    		}
 	    		
@@ -484,8 +453,7 @@ class FluxoSettingsPage
 	    			}
 	    		}
 	    		
-	    		$pin = Tratar::FormatText($row[11]);
-	    		$pin = array_key_exists($pin, $pins) ? $pins[$pin] : '';
+	    		$pin = $pins[rand(0, count($pins) - 1)];
 	    		
     			if(!$debug && is_int($post_id) )
     			{
@@ -505,6 +473,8 @@ class FluxoSettingsPage
     			
     			foreach ($row as $key => $custom_field)
     			{
+    				$custom_field = trim($custom_field);
+    				
     				if(in_array($key, array(0,1,2,3,5,6,11,12,13,14,19,20,24,26,28,29,36,38,42,))) // stop on column with tax
     				{
     					continue;
