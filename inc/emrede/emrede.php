@@ -770,8 +770,11 @@ class EmRede
 	{
 		// map.css
 		wp_register_style( 'emrede', get_template_directory_uri() . '/inc/emrede/css/emrede.css', array(), '1' );
-		wp_enqueue_style( 'emrede' );
 		
+		if( get_query_var(self::NEW_EMREDE_PAGE) == true || get_post_type() == 'emrede' )
+		{
+			wp_enqueue_style( 'emrede' );
+		}
 		if( function_exists('mapasdevista_enqueue_scripts') && get_query_var(self::NEW_EMREDE_PAGE) == true )
 		{
 			wp_enqueue_style('mapasdevista-admin', mapasdevista_get_baseurl('template_directory') . '/admin/admin.css');
