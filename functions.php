@@ -163,6 +163,16 @@ function fluxo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'fluxo_scripts' );
 
+function fluxo_base_custom_url_rewrites($rules) {
+	$new_rules = array(
+		"emrede/?$" => "index.php?mapa-tpl=mapa",
+	);
+
+	return $new_rules + $rules;
+}
+
+add_filter('rewrite_rules_array', 'fluxo_base_custom_url_rewrites', 11, 1);
+
 /**
  * Implement the Custom Header feature.
  */
