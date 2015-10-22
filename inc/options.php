@@ -292,7 +292,7 @@ class FluxoSettingsPage
     	{
     		include_once dirname(__FILE__).'/Tratar.php';
     		
-    		$debug = true;
+    		$debug = false;
     		$getLocation = true;
     		$begin = 0;
     		$limit = 20;
