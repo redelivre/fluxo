@@ -7,7 +7,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rede_Cultura_Viva
+ * @package Fluxo
  */
 
 /*
@@ -28,21 +28,21 @@ if ( post_password_required() ) {
 		// If comments are closed and there are comments, let's leave a little note, shall we?
 		if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) :
 	?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'rede-cultura-viva' ); ?></p>
+		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'fluxo' ); ?></p>
 	<?php endif; ?>
 
-	<?php comment_form(array('title_reply' => __('Leave a comment.', 'rede-cultura-viva'), 'label_submit' => __('Send', 'rede-cultura-viva') )); ?>
+	<?php comment_form(array('title_reply' => __('Leave a comment.', 'fluxo'), 'label_submit' => __('Send', 'fluxo') )); ?>
 	
 	<?php if ( have_comments() ) : ?>
 		
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'rede-cultura-viva' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'fluxo' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'rede-cultura-viva' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'rede-cultura-viva' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'fluxo' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'fluxo' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
@@ -50,21 +50,17 @@ if ( post_password_required() ) {
 
 		<ol class="comment-list">
 			<?php
-				wp_list_comments( array(
-					'style'      => 'ol',
-					'short_ping' => true,
-					'walker'	 => new RedeCulturaVivaWalker_Comment
-				) );
+				wp_list_comments( );
 			?>
 		</ol><!-- .comment-list -->
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
 		<nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'rede-cultura-viva' ); ?></h2>
+			<h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'fluxo' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'rede-cultura-viva' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'rede-cultura-viva' ) ); ?></div>
+				<div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'fluxo' ) ); ?></div>
+				<div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'fluxo' ) ); ?></div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-below -->

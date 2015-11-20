@@ -89,7 +89,7 @@ class RedeCulturaVivaWalker_Comment extends Walker_Comment {
 				<div class="comment-col2">
 					<footer class="comment-meta">
 						<div class="comment-author vcard">
-							<?php printf( __( '%s <span class="says">on</span>', 'rede-cultura-viva' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
+							<?php printf( __( '%s <span class="says">on</span>', 'fluxo' ), sprintf( '<b class="fn">%s</b>', get_comment_author_link() ) ); ?>
 						</div><!-- .comment-author -->
 	
 						<div class="comment-metadata">

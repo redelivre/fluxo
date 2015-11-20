@@ -6,7 +6,7 @@ global $EmRede_global;
 	
 $emrede = $EmRede_global;
 
-$buttonLabel = __('Colocar minha pesquisa no mapa', 'pontosdecultura');
+$buttonLabel = __('Colocar minha pesquisa no mapa', 'fluxo');
 
 $publish = array_key_exists('publish', $_POST) && ($_POST['publish'] == 'Publish' || $_POST['publish'] == 'Publish EmRede' || $_POST['publish'] == $buttonLabel );
 
@@ -33,7 +33,7 @@ if ( ! is_user_logged_in() )
 		</div>
 		<div class="row">
 			<div class="col-lg-12 sections-advise">
-				<h2 class="text-center"><?php echo __('É necessário estar logado para acessar essa área. Faça o login ou, se ainda não tiver uma conta, clique em ', 'pontosdecultura'); ?><a href="<?php echo get_bloginfo('url').'/wp-login.php?action=register&redirect_to='.EmRede::get_new_url(); ?>"><?php _e('"Cadastre-se aqui"', 'pontosdecultura'); ?></a></h2>
+				<h2 class="text-center"><?php echo __('É necessário estar logado para acessar essa área. Faça o login ou, se ainda não tiver uma conta, clique em ', 'fluxo'); ?><a href="<?php echo get_bloginfo('url').'/wp-login.php?action=register&redirect_to='.EmRede::get_new_url(); ?>"><?php _e('"Cadastre-se aqui"', 'fluxo'); ?></a></h2>
 			</div>
 		</div>
 	
@@ -44,7 +44,7 @@ if ( ! is_user_logged_in() )
 			</div>
 			</div>
 		</div>
-		<div class="login-register"><a href="<?php echo get_bloginfo('url').'/wp-login.php?action=register&redirect_to='.EmRede::get_new_url(); ?>"><?php _e('Cadastre-se aqui', 'pontosdecultura'); ?></a></div>
+		<div class="login-register"><a href="<?php echo get_bloginfo('url').'/wp-login.php?action=register&redirect_to='.EmRede::get_new_url(); ?>"><?php _e('Cadastre-se aqui', 'fluxo'); ?></a></div>
 	</div>
 </div>
 <?php
@@ -172,7 +172,7 @@ else
 				$result = wp_set_post_terms($post_ID, $_POST['taxonomy_'.$taxonomy], $taxonomy);
 				if( is_object($result) && get_class($result) == 'WP_Error' )
 				{
-					$message[] = __('Erro ao gravar categorização', 'pontosdecultura').': '.$taxonomy;
+					$message[] = __('Erro ao gravar categorização', 'fluxo').': '.$taxonomy;
 					$notice = true;
 				}
 				
@@ -191,7 +191,7 @@ else
 				$result = wp_set_post_terms($post_ID, $term_id, $taxonomy, true); // save term
 				if( is_object($result) && get_class($result) == 'WP_Error' )
 				{
-					$message[] = __('Erro ao gravar categorização campo de texto outra/outro', 'pontosdecultura').': '.$taxonomy;
+					$message[] = __('Erro ao gravar categorização campo de texto outra/outro', 'fluxo').': '.$taxonomy;
 					$notice = true;
 				}
 				
@@ -222,23 +222,23 @@ else
 					switch($file)
 					{
 						case 'thumbnail':
-							$message[] = __('Erro ao registrar imagem de destaque', 'pontosdecultura');
+							$message[] = __('Erro ao registrar imagem de destaque', 'fluxo');
 							$has_thumbnail = false;
 							break;
 						case 'thumbnail2':
-							$message[] = __('Erro ao registrar segunda imagem', 'pontosdecultura');
+							$message[] = __('Erro ao registrar segunda imagem', 'fluxo');
 							$has_thumbnail2 = false;
 							break;
 						case 'thumbnail3':
-							$message[] = __('Erro ao registrar terceira imagem', 'pontosdecultura');
+							$message[] = __('Erro ao registrar terceira imagem', 'fluxo');
 							$has_thumbnail3 = false;
 							break;
 						case 'thumbnail4':
-							$message[] = __('Erro ao registrar foto do responsável', 'pontosdecultura');
+							$message[] = __('Erro ao registrar foto do responsável', 'fluxo');
 							$has_thumbnail4 = false;
 							break;
 						default:
-							$message[] = __('Erro ao registrar imagens', 'pontosdecultura');
+							$message[] = __('Erro ao registrar imagens', 'fluxo');
 							break;
 					}
 						
@@ -258,7 +258,7 @@ else
 			{
 				if( ! update_post_meta($post_ID,'_thumbnail_id',$attach_id['thumbnail']))
 				{
-					$message[] = __('Erro ao gravar imagem de destaque', 'pontosdecultura');
+					$message[] = __('Erro ao gravar imagem de destaque', 'fluxo');
 					$notice = true;
 				}
 			}
@@ -266,7 +266,7 @@ else
 			{
 				if( ! update_post_meta($post_ID,'thumbnail2', $attach['thumbnail2'] ) )
 				{
-					$message[] = __('Erro ao gravar segunda imagem', 'pontosdecultura');
+					$message[] = __('Erro ao gravar segunda imagem', 'fluxo');
 					$notice = true;
 				}
 			}
@@ -274,7 +274,7 @@ else
 			{
 				if( ! update_post_meta($post_ID,'thumbnail3', $attach['thumbnail3'] ) )
 				{
-					$message[] = __('Erro ao gravar terceira imagem', 'pontosdecultura');
+					$message[] = __('Erro ao gravar terceira imagem', 'fluxo');
 					$notice = true;
 				}
 			}
@@ -282,7 +282,7 @@ else
 			{
 				if( ! update_post_meta($post_ID,'thumbnail4', $attach['thumbnail4'] ) )
 				{
-					$message[] = __('Erro ao gravar foto do responsável', 'pontosdecultura');
+					$message[] = __('Erro ao gravar foto do responsável', 'fluxo');
 					$notice = true;
 				}
 			}
@@ -402,12 +402,12 @@ else
 	<div class="emrede-map-block">
 		<div class="emrede-item emrede-item-map emrede-map">
 			<label class="emrede-item-label">
-			<div class="emrede-item-title"><h2><?php _e('Encontre-se no mapa', 'pontosdecultura');?></h2>
+			<div class="emrede-item-title"><h2><?php _e('Encontre-se no mapa', 'fluxo');?></h2>
 				</div>
 				<div class="emrede-item-tip-text"><h3><?php
-					_e('1 - Dê zoom em seu território e encontre sua rua.', 'pontosdecultura');echo "<br/>";
-					_e('2 - Clique duas vezes no mapa para inserir um marcador.', 'pontosdecultura');echo "<br/>";
-					_e('3 - Se preferir, digite seu endereço no campo abaixo do mapa, aperte "Enter" e deixe que a gente te encontra.', 'pontosdecultura'); 
+					_e('1 - Dê zoom em seu território e encontre sua rua.', 'fluxo');echo "<br/>";
+					_e('2 - Clique duas vezes no mapa para inserir um marcador.', 'fluxo');echo "<br/>";
+					_e('3 - Se preferir, digite seu endereço no campo abaixo do mapa, aperte "Enter" e deixe que a gente te encontra.', 'fluxo'); 
 					?></h3>
 				</div>
 			</label>
@@ -443,10 +443,10 @@ else
  	<div class="images">
 	 	<div class="images-thumbnail-block images-thumbnail">
 			<label for="thumbnail" class="emrede-item-label">
-				<div class="emrede-item-title"><?php _e('Image de Destaque', 'pontosdecultura'); ?>
+				<div class="emrede-item-title"><?php _e('Image de Destaque', 'fluxo'); ?>
 				</div>
 				<div class="emrede-item-tip-text">
-					<?php _e('Imagem que será exibida em listagens', 'pontosdecultura'); ?>
+					<?php _e('Imagem que será exibida em listagens', 'fluxo'); ?>
 				</div>
 			</label>
 			<input type="file" name="thumbnail" id="thumbnail"
@@ -459,10 +459,10 @@ else
 		</div>
 		<div class="images-thumbnail-block images-thumbnail2">
 			<label for="thumbnail2" class="emrede-item-label">
-				<div class="emrede-item-title"><?php _e('Imagem 2', 'pontosdecultura'); ?>
+				<div class="emrede-item-title"><?php _e('Imagem 2', 'fluxo'); ?>
 				</div>
 				<div class="emrede-item-tip-text">
-					<?php _e('&nbsp;', 'pontosdecultura'); ?>
+					<?php _e('&nbsp;', 'fluxo'); ?>
 				</div>
 			</label>
 			<input type="file" name="thumbnail2" id="thumbnail2"
@@ -475,10 +475,10 @@ else
 		</div>
 		<div class="images-thumbnail-block images-thumbnail3">
 			<label for="thumbnail3" class="emrede-item-label">
-				<div class="emrede-item-title"><?php _e('Imagem 3', 'pontosdecultura'); ?>
+				<div class="emrede-item-title"><?php _e('Imagem 3', 'fluxo'); ?>
 				</div>
 				<div class="emrede-item-tip-text">
-					<?php _e('&nbsp;', 'pontosdecultura'); ?>
+					<?php _e('&nbsp;', 'fluxo'); ?>
 				</div>
 			</label>
 			<input type="file" name="thumbnail3" id="thumbnail3"
@@ -508,10 +508,10 @@ else
 	EmRede::print_field($fields['email-resp']);?>
 	<div class="images-thumbnail-block images-thumbnail4">
 		<label for="thumbnail4" class="emrede-item-label">
-			<div class="emrede-item-title"><?php _e('Foto do responsável', 'pontosdecultura'); ?>
+			<div class="emrede-item-title"><?php _e('Foto do responsável', 'fluxo'); ?>
 			</div>
 			<div class="emrede-item-tip-text">
-				<?php _e('Imagem do Responsável', 'pontosdecultura'); ?>
+				<?php _e('Imagem do Responsável', 'fluxo'); ?>
 			</div>
 		</label>
 		<input type="file" name="thumbnail4" id="thumbnail4"

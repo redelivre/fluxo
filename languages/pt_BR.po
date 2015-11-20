@@ -1,0 +1,967 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Fluxo 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/redelivre/fluxo/issues\n"
+"POT-Creation-Date: 2015-11-20 11:16-0300\n"
+"PO-Revision-Date: 2015-11-20 11:35-0300\n"
+"Last-Translator: Jacson Passold <jacson@ethymos.com.br>\n"
+"Language-Team: Jacson <jacson@ethymos.com.br>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c;_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-SearchPath-1: .\n"
+
+#: ../tpl-contato.php:14
+msgid "Contact Us"
+msgstr "Contato"
+
+# @ _s
+#: ../tpl-contato.php:27 ../template-parts/content-agenda.php:63
+#: ../template-parts/content.php:59 ../template-parts/content-page.php:44
+#: ../template-parts/content-single.php:45
+msgid "Pages:"
+msgstr "Páginas"
+
+# @ _s
+#: ../tpl-contato.php:28 ../template-parts/content-agenda.php:67
+#: ../template-parts/comment-template.php:101 ../inc/template-tags.php:126
+msgid "Edit"
+msgstr "Editar"
+
+#: ../footer.php:18
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#: ../footer.php:18
+#, php-format
+msgid "Orgulhosamente desenvolvido com %s"
+msgstr "Orgulhosamente desenvolvido com %s"
+
+#: ../archive-agenda.php:32
+msgid "No results found."
+msgstr "Nenhum resultado encontrado"
+
+# @ _s
+#: ../header.php:25
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+# @ _s
+#: ../functions.php:45
+msgid "Primary Menu"
+msgstr "Menu Primário"
+
+# @ _s
+#: ../functions.php:100
+msgid "Sidebar"
+msgstr "Barra lateral"
+
+# @ _s
+#: ../404.php:15
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oops! Essa página não pode ser encontrada"
+
+# @ _s
+#: ../404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Parece que não foi encontrado nada nesse local. Você pode tentar um dos "
+"links abaixo ou a pesquisa?"
+
+# @ _s
+#: ../404.php:27
+msgid "Most Used Categories"
+msgstr "Categorias mais usadas"
+
+# @ _s
+#: ../404.php:44
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Tente olhar nos arquivos mensais. %1$s"
+
+# @ _s
+#: ../comments.php:31
+msgid "Comments are closed."
+msgstr "Comentários desativados"
+
+#: ../comments.php:34
+msgid "Leave a comment."
+msgstr "Deixe um comentário"
+
+#: ../comments.php:34
+msgid "Send"
+msgstr "Enviar"
+
+# @ _s
+#: ../comments.php:41 ../comments.php:59
+msgid "Comment navigation"
+msgstr "Navegação por comentários"
+
+# @ _s
+#: ../comments.php:44 ../comments.php:62
+msgid "Older Comments"
+msgstr "Comentários anteriores"
+
+# @ _s
+#: ../comments.php:45 ../comments.php:63
+msgid "Newer Comments"
+msgstr "Novos comentários"
+
+#: ../template-parts/_filters.php:75
+#: ../inc/estadoscidades/EstadosCidades.php:118
+msgctxt "fluxo"
+msgid "Estado"
+msgstr "Estado"
+
+#: ../template-parts/_filters.php:89
+#: ../inc/estadoscidades/EstadosCidades.php:132
+#: ../inc/estadoscidades/EstadosCidades.php:142
+#: ../inc/estadoscidades/EstadosCidades.php:222
+msgctxt "fluxo"
+msgid "Cidade"
+msgstr "Cidade"
+
+#: ../template-parts/_filters.php:133
+msgid "Filtros"
+msgstr "Filtros"
+
+#: ../template-parts/content-agenda.php:21
+#, php-format
+msgid "Read, comment and share &ldquo;%s&rdquo;"
+msgstr "Leia, comente e compartilhe &ldquo;%s&rdquo;"
+
+#: ../template-parts/content-agenda.php:55
+msgctxt "Agenda"
+msgid "More info"
+msgstr "Mais informações"
+
+#: ../template-parts/comment-template.php:37
+#, php-format
+msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">on</span>"
+msgstr "<cite class=\"fn\">%s</cite> <span class=\"says\">em</span>"
+
+#: ../template-parts/comment-template.php:40
+#: ../template-parts/comment-template.php:105
+msgid "Your comment is awaiting moderation."
+msgstr "Comentários esperando por moderação."
+
+#: ../template-parts/comment-template.php:47
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s em %2$s"
+
+#: ../template-parts/comment-template.php:47
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: ../template-parts/comment-template.php:92
+#, php-format
+msgid "%s <span class=\"says\">on</span>"
+msgstr "%s <span class=\"says\">em</span>"
+
+#: ../template-parts/comment-template.php:98
+#, php-format
+msgctxt "1: date"
+msgid "%1$s"
+msgstr "%1$s"
+
+# @ _s
+#: ../template-parts/content.php:52
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: ../template-parts/content-page.php:55
+#, php-format
+msgid "Edit %s"
+msgstr "Editar %s"
+
+# @ _s
+#: ../template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Nada encontrado"
+
+# @ _s
+#: ../template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto para publicar seu primeiro poste? <a href=\"%1$s\">Comece aqui</a>."
+
+# @ _s
+#: ../template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Desculpe, mas nada foi encontrado para os termos procurados. Favor tentar "
+"com palavras-chaves diferentes."
+
+# @ _s
+#: ../template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Parece que não podemos achar o que você procura. Talvez a busca possa ajudar."
+
+#: ../template-parts/content-agenda-loop.php:34
+msgid "&laquo; Previous posts"
+msgstr "&laquo; Postes anteriores"
+
+#: ../template-parts/content-agenda-loop.php:35
+msgid "Next posts &raquo;"
+msgstr "Próximos postes &raquo;"
+
+#: ../template-parts/content-single.php:55
+msgid "Share on Twitter"
+msgstr "Compartilhar no Twitter"
+
+#: ../template-parts/content-single.php:56
+msgid "Share on Facebook"
+msgstr "Compartilhar no Facebook"
+
+#: ../template-parts/content-single.php:57
+msgid "Share on Google+"
+msgstr "Compartilhar no Google+"
+
+# @ _s
+#: ../inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr "Navegação pelos postes"
+
+# @ _s
+#: ../inc/template-tags.php:27
+msgid "Older posts"
+msgstr "Postes anteriores"
+
+# @ _s
+#: ../inc/template-tags.php:31
+msgid "Newer posts"
+msgstr "Postes recentes"
+
+# @ _s
+#: ../inc/template-tags.php:56
+msgid "Post navigation"
+msgstr "Navegação pelo poste"
+
+# @ _s
+#: ../inc/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Publicado em %s"
+
+# @ _s
+#: ../inc/template-tags.php:91
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "por %s"
+
+# @ _s
+#: ../inc/template-tags.php:108 ../inc/template-tags.php:114
+msgid ", "
+msgstr ", "
+
+# @ _s
+#: ../inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Postado em %1$s"
+
+# @ _s
+#: ../inc/template-tags.php:116
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Marcado como %1$s"
+
+# @ _s
+#: ../inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+# @ _s
+#: ../inc/template-tags.php:122
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+# @ _s
+#: ../inc/template-tags.php:122
+msgid "% Comments"
+msgstr "% Comentários"
+
+# @ _s
+#: ../inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr "Categoria: %s"
+
+# @ _s
+#: ../inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr "Tag: %s"
+
+# @ _s
+#: ../inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+# @ _s
+#: ../inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr "Ano: %s"
+
+# @ _s
+#: ../inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+# @ _s
+#: ../inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr "Mês: %s"
+
+# @ _s
+#: ../inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F YF Y"
+
+# @ _s
+#: ../inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr "Dias: %s"
+
+# @ _s
+#: ../inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+# @ _s
+#: ../inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Asides"
+
+# @ _s
+#: ../inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerias"
+
+# @ _s
+#: ../inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Images"
+
+# @ _s
+#: ../inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Vídeos"
+
+# @ _s
+#: ../inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Quotas"
+
+# @ _s
+#: ../inc/template-tags.php:166
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+# @ _s
+#: ../inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Situação"
+
+# @ _s
+#: ../inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+# @ _s
+#: ../inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Conversas"
+
+# @ _s
+#: ../inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr "Arquivos: %s"
+
+# @ _s
+#: ../inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+# @ _s
+#: ../inc/template-tags.php:181
+msgid "Archives"
+msgstr "Arquivos"
+
+# @ _s
+#: ../inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Página %s"
+
+#: ../inc/options.php:26 ../inc/options.php:27
+msgid "Importar do arquivo"
+msgstr "Importar do arquivo"
+
+#: ../inc/options.php:45
+msgid "Import File Tool"
+msgstr "Ferramenta de importação de arquivos"
+
+#: ../inc/options.php:76
+msgid "Importações personalizadas"
+msgstr "Importações personalizadas"
+
+#: ../inc/options.php:141
+msgid "Importações especiais do Tema:"
+msgstr "Importações especiais do Tema:"
+
+#: ../inc/options.php:151
+msgid "Criar"
+msgstr "Criar"
+
+#: ../inc/options.php:174
+msgid "Remote server did not respond"
+msgstr "Servidor não respondeu"
+
+#: ../inc/options.php:180
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr "Remote server returned error response %1$d %2$s"
+
+#: ../inc/options.php:187
+msgid "Remote file is incorrect size"
+msgstr "Arquivos remoto com tamanho incorreto"
+
+#: ../inc/options.php:192
+msgid "Zero size file downloaded"
+msgstr "Arquivo baixaido com tamanho 0"
+
+#: ../inc/options.php:219
+msgid "Invalid file type"
+msgstr "Tipo de arquivo inválido"
+
+#: ../inc/estadoscidades/EstadosCidades.php:33
+#: ../inc/estadoscidades/EstadosCidades.php:34
+msgid "Território"
+msgstr "Território"
+
+#: ../inc/estadoscidades/EstadosCidades.php:35
+msgid "Procurar em um território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:36
+msgid "Todos os territórios"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:39
+msgid "Editar um Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:40
+msgid "Atualizar um Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:41
+msgid "Adicionar Novo Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:42
+msgid "Adicionar Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:43
+msgid "Novo Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:44
+msgid "Visualizar Território"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:45
+msgid "Nenhum território localizado"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:46
+msgid "Nenhum Território localizado na lixeira"
+msgstr ""
+
+#: ../inc/estadoscidades/EstadosCidades.php:47
+msgid "Territórios"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:17
+msgid "Fórum"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:23
+msgid "Domínios"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:29
+msgid "Responsável pelo preenchimento"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:35
+msgid "Situação"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:38
+msgid "Ativo"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:38
+msgid "Em desenvolvimento"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:43
+msgid "Carta de apoio"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:55
+msgid "Número de Postagens"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:61
+msgid "Número de Páginas"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:67
+msgid "Número de Comentários"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:73
+msgid "Participa de alguma rede, qual? "
+msgstr ""
+
+#: ../inc/emrede/emrede.php:85
+msgid "Número de Pessoas Atingidas"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:91
+msgid "Imagem"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:104
+msgid "É ponto de cultura?"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:107
+msgid "Sim"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:107
+msgid "Não"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:112
+msgid "Email"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:118
+msgid "Telefone"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:124
+msgid "Facebook"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:142
+msgid "País"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:148
+msgid "Endereço"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:154
+msgid "Data de Criação"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:167
+msgid "user_id"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:173
+msgid "plan_id"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:179
+msgid "blog_id"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:185
+msgid "own_domain"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:191
+msgid "template"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:197
+msgid "stylesheet"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:203
+msgid "current_theme"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:209
+msgid "E-mail do usuário"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:215
+msgid "Nome do usuário"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:221
+msgid "Site do usuário"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:227
+msgid "mídias"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:233
+msgid "eventos"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:239
+msgid "newletters"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:245
+msgid "outros post types"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:251
+msgid "Contribuição contínua(anual)"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:257
+msgid "Contribuição em projeto"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:325 ../inc/emrede/emrede.php:326
+#: ../inc/emrede/emrede.php:336 ../inc/emrede/emrede.php:342
+#: ../inc/emrede/emrede.php:344
+msgid "em Rede"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:327
+msgid "Add new"
+msgstr "Adicionar nova"
+
+#: ../inc/emrede/emrede.php:328
+msgid "Add new em Rede"
+msgstr "Adicionar nova em Rede"
+
+#: ../inc/emrede/emrede.php:329
+msgid "Edit em Rede"
+msgstr "Editar em Rede"
+
+#: ../inc/emrede/emrede.php:330
+msgid "New em Rede"
+msgstr "Nova em Rede"
+
+#: ../inc/emrede/emrede.php:331
+msgid "View em Rede"
+msgstr "Ver em Rede"
+
+#: ../inc/emrede/emrede.php:332
+msgid "Search em Rede"
+msgstr "Procurar em Rede"
+
+#: ../inc/emrede/emrede.php:333
+msgid "em Rede not found"
+msgstr "em Rede não encontrada"
+
+#: ../inc/emrede/emrede.php:334
+msgid "em Rede not found in the trash"
+msgstr "em Rede não encontrada na lixeira"
+
+#: ../inc/emrede/emrede.php:374
+msgid "Detalhes do ponto em Rede"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:375
+msgid "Imagens do ponto em Rede"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:385
+msgid "Nome do Núcleo ou Artista Pesquisador"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:392
+msgid "Descreva a pesquisa do seu núcleo"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:393
+msgid "Maximum 2000 characters"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:456
+msgid " anos"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:459
+msgid " meses"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:503
+msgid "Segunda Imagem"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:505 ../inc/emrede/emrede.php:513
+#: ../inc/emrede/emrede.php:521 ../inc/emrede/emrede.php:757
+msgid "Choose or Upload an Image"
+msgstr "Escolhar um arquivo para enviar"
+
+#: ../inc/emrede/emrede.php:511
+msgid "Terceira Imagem"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:519
+msgid "Foto do Responsável"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:587
+msgid "Auto Draft"
+msgstr "Rascunho automático"
+
+#: ../inc/emrede/emrede.php:758
+msgid "Use this image"
+msgstr "Use essa imagem"
+
+#: ../inc/emrede/emrede.php:831 ../inc/emrede/emrede.php:951
+#: ../inc/emrede/emrede.php:1026
+msgctxt "fluxo"
+msgid "Selecione"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:982
+msgctxt "fluxo"
+msgid "Meses"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:995
+msgctxt "fluxo"
+msgid "Anos"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:1242
+#, php-format
+msgid "Permissão original (%s) não localizada"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:1252
+#, php-format
+msgid "Permissão %s não localizada"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:1332 ../inc/emrede/new-emrede.php:103
+msgid "*O campo obrigatório"
+msgstr ""
+
+#: ../inc/emrede/emrede.php:1332 ../inc/emrede/new-emrede.php:103
+msgid "não foi preenchido"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:9
+msgid "Colocar minha pesquisa no mapa"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:19
+msgid "Invalid post type"
+msgstr "Tipo de poste inválido"
+
+#: ../inc/emrede/new-emrede.php:36
+msgid ""
+"É necessário estar logado para acessar essa área. Faça o login ou, se ainda "
+"não tiver uma conta, clique em "
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:36
+msgid "\"Cadastre-se aqui\""
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:47
+msgid "Cadastre-se aqui"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:175
+msgid "Erro ao gravar categorização"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:194
+msgid "Erro ao gravar categorização campo de texto outra/outro"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:225
+msgid "Erro ao registrar imagem de destaque"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:229
+msgid "Erro ao registrar segunda imagem"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:233
+msgid "Erro ao registrar terceira imagem"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:237
+msgid "Erro ao registrar foto do responsável"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:241
+msgid "Erro ao registrar imagens"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:261
+msgid "Erro ao gravar imagem de destaque"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:269
+msgid "Erro ao gravar segunda imagem"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:277
+msgid "Erro ao gravar terceira imagem"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:285
+msgid "Erro ao gravar foto do responsável"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:314
+msgid ""
+"Sua pesquisa continuada foi cadastrada e aguarda aprovação de nossos "
+"moderadores. Em até 15 dias ela deve estar disponível no Mapa. Obrigado ;)"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:405
+msgid "Encontre-se no mapa"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:408
+msgid "1 - Dê zoom em seu território e encontre sua rua."
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:409
+msgid "2 - Clique duas vezes no mapa para inserir um marcador."
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:410
+msgid ""
+"3 - Se preferir, digite seu endereço no campo abaixo do mapa, aperte \"Enter"
+"\" e deixe que a gente te encontra."
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:446
+msgid "Image de Destaque"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:449
+msgid "Imagem que será exibida em listagens"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:462
+msgid "Imagem 2"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:465 ../inc/emrede/new-emrede.php:481
+msgid "&nbsp;"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:478
+msgid "Imagem 3"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:511
+msgid "Foto do responsável"
+msgstr ""
+
+#: ../inc/emrede/new-emrede.php:514
+msgid "Imagem do Responsável"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:9 ../inc/emrede/taxs.php:10
+#: ../inc/emrede/taxs.php:23
+msgid "Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:11
+msgid "Procurar em Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:12
+msgid "Todos os Públicos Alvos"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:15
+msgid "Editar Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:16
+msgid "Atualizar um Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:17
+msgid "Adicionar Novo Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:18
+msgid "Adicionar Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:19
+msgid "Novo Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:20
+msgid "Visualizar Público Alvo"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:21
+msgid "Nenhum Público Alvo localizado"
+msgstr ""
+
+#: ../inc/emrede/taxs.php:22
+msgid "Nenhum Público Alvo localizado na lixeira"
+msgstr ""

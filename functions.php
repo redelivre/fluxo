@@ -173,6 +173,15 @@ function fluxo_base_custom_url_rewrites($rules) {
 
 add_filter('rewrite_rules_array', 'fluxo_base_custom_url_rewrites', 11, 1);
 
+function fluxo_has_sidebar($post_id = null)
+{
+	if(is_null($post_id)) $post_id = get_the_ID();
+
+	if(!is_int($post_id) || $post_id < 1 ) return true;
+
+	return ! (get_post_meta($post_id, '_hide-sidebar', true) == 'Y');
+}
+
 /**
  * Implement the Custom Header feature.
  */

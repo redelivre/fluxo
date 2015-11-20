@@ -828,7 +828,7 @@ class EmRede
 						</label><div class="emrede-item-input-dropdown dropdown-<?php echo $id; ?>"><select id="<?php echo $id ?>"
 							class="<?php echo $input_class ?>"
 							name="<?php echo $id ?>">
-								<option value="" selected="selected" ><?php echo esc_attr_x('Selecione', 'pontosdecultura' ); ?></option>
+								<option value="" selected="selected" ><?php echo esc_attr_x('Selecione', 'fluxo' ); ?></option>
 								<?php
 									$args = array(
 											'orderby' => 'name',

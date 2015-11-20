@@ -9,11 +9,11 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rede_Cultura_Viva
+ * @package Fluxo
  */
 
 get_header(); ?>
-<div class="clearfix"></div>
+	<div class="clearfix"></div>
 	<div id="primary" class="content-area" >
 		<main id="main" class="site-main" role="main">
 			<div class="row">

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rede_Cultura_Viva
+ * @package Fluxo
  */
 
 ?>
@@ -37,12 +37,12 @@ if ( has_post_thumbnail() )
 
 	<div class="entry-content">
 		<div class="entry-meta">
-			<?php rede_cultura_viva_posted_on(); ?>
+			<?php fluxo_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rede-cultura-viva' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fluxo' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -52,9 +52,9 @@ if ( has_post_thumbnail() )
 		<div class="entry-share cf">
 	        <ul class="share-social cf">
 	        	<?php  $post_permalink = get_permalink(); ?>
-		    	<li><a class="share-twitter icon-twitter" title="<?php _e( 'Share on Twitter', 'rede-cultura-viva' ); ?>" href="http://twitter.com/intent/tweet?original_referer=<?php echo $post_permalink; ?>&text=<?php echo $post->post_title; ?>&url=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Twitter', 'rede-cultura-viva' ); ?></span></a></li>
-		    	<li><a class="share-facebook icon-facebook-squared" title="<?php _e( 'Share on Facebook', 'rede-cultura-viva' ); ?>" href="https://www.facebook.com/sharer.php?u=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Facebook', 'rede-cultura-viva' ); ?></span></a></li>
-		    	<li><a class="share-googleplus icon-gplus" title="<?php _e( 'Share on Google+', 'rede-cultura-viva' ); ?>" href="https://plus.google.com/share?url=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Google+', 'rede-cultura-viva' ); ?></span></a></li>
+		    	<li><a class="share-twitter icon-twitter" title="<?php _e( 'Share on Twitter', 'fluxo' ); ?>" href="http://twitter.com/intent/tweet?original_referer=<?php echo $post_permalink; ?>&text=<?php echo $post->post_title; ?>&url=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Twitter', 'fluxo' ); ?></span></a></li>
+		    	<li><a class="share-facebook icon-facebook-squared" title="<?php _e( 'Share on Facebook', 'fluxo' ); ?>" href="https://www.facebook.com/sharer.php?u=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Facebook', 'fluxo' ); ?></span></a></li>
+		    	<li><a class="share-googleplus icon-gplus" title="<?php _e( 'Share on Google+', 'fluxo' ); ?>" href="https://plus.google.com/share?url=<?php echo $post_permalink; ?>" rel="nofollow" target="_blank"><span class="assistive-text"><?php _e( 'Share on Google+', 'fluxo' ); ?></span></a></li>
 			</ul>
 			<div class="share-shortlink">
 				<span aria-hidden="true" class="icon-publish"></span>
@@ -62,7 +62,7 @@ if ( has_post_thumbnail() )
 			</div>
 	    </div><!-- .entry-share -->
 		
-		<?php rede_cultura_viva_entry_footer(); ?>
+		<?php fluxo_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

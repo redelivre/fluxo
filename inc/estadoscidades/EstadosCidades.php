@@ -30,21 +30,21 @@ class EstadosCidades
 		
 		$labels = array
 		(
-				'name' => __('Território','pontosdecultura'),
-				'singular_name' => __('Território', 'pontosdecultura'),
-				'search_items' => __('Procurar em um território','pontosdecultura'),
-				'all_items' => __('Todos os territórios','pontosdecultura'),
+				'name' => __('Território','fluxo'),
+				'singular_name' => __('Território', 'fluxo'),
+				'search_items' => __('Procurar em um território','fluxo'),
+				'all_items' => __('Todos os territórios','fluxo'),
 				'parent_item' => null,
 				'parent_item_colon' => null,
-				'edit_item' => __('Editar um Território','pontosdecultura'),
-				'update_item' => __('Atualizar um Território','pontosdecultura'),
-				'add_new_item' => __('Adicionar Novo Território','pontosdecultura'),
-				'add_new' => __('Adicionar Território', 'pontosdecultura'),
-				'new_item_name' => __('Novo Território','pontosdecultura'),
-				'view_item' => __('Visualizar Território','pontosdecultura'),
-				'not_found' =>  __('Nenhum território localizado','pontosdecultura'),
-				'not_found_in_trash' => __('Nenhum Território localizado na lixeira','pontosdecultura'),
-				'menu_name' => __('Territórios','pontosdecultura')
+				'edit_item' => __('Editar um Território','fluxo'),
+				'update_item' => __('Atualizar um Território','fluxo'),
+				'add_new_item' => __('Adicionar Novo Território','fluxo'),
+				'add_new' => __('Adicionar Território', 'fluxo'),
+				'new_item_name' => __('Novo Território','fluxo'),
+				'view_item' => __('Visualizar Território','fluxo'),
+				'not_found' =>  __('Nenhum território localizado','fluxo'),
+				'not_found_in_trash' => __('Nenhum Território localizado na lixeira','fluxo'),
+				'menu_name' => __('Territórios','fluxo')
 		);
 		
 		register_taxonomy( 'territorio',array (
@@ -115,7 +115,7 @@ class EstadosCidades
 	{?>
 		<div class="dropdown-estado dropdown-<?php echo $nameEstado; ?>">
 			<select name="<?php echo $nameEstado; ?>" class="dropdown-estado" autocomplete="off">
-				<option value="" selected="selected" ><?php echo esc_attr_x('Estado', 'pontosdecultura' ); ?></option>
+				<option value="" selected="selected" ><?php echo esc_attr_x('Estado', 'fluxo' ); ?></option>
 				<?php
 					$terms = get_terms($taxonomy, array('parent' => 0, 'orderby' => 'name', 'hide_empty' => false));
 					foreach ($terms as $term)
@@ -129,7 +129,7 @@ class EstadosCidades
 		</div>
 		<div class="dropdown-cidade dropdown-<?php echo $nameCidade; ?>">
 			<select name="<?php echo $nameCidade; ?>" class="dropdown-cidade">
-				<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'pontosdecultura' ); ?></option>
+				<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'fluxo' ); ?></option>
 			</select>
 		</div>
 		<?php
@@ -139,7 +139,7 @@ class EstadosCidades
 	{
 		?>
 			<select name="taxonomy_territorio[]" class="dropdown-cidade">
-				<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'pontosdecultura' ); ?></option>
+				<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'fluxo' ); ?></option>
 				<?php
 				if(array_key_exists('uf', $_POST) && !empty($_POST['uf']))
 				{
@@ -219,7 +219,7 @@ class EstadosCidades
 	{
 		?>
 		<select name="filter-panel-cidade" class="filter-panel-cidade">
-			<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'pontosdecultura' ); ?></option>
+			<option value="" selected="selected" ><?php echo esc_attr_x('Cidade', 'fluxo' ); ?></option>
 			<?php
 			if(array_key_exists('uf', $_POST) && !empty($_POST['uf']))
 			{
