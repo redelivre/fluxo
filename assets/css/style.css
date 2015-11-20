@@ -229,3 +229,18 @@ p.lead {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.single .content-area,
+.page .content-area {
+    margin-top: 10em;
+}
+
+/*--------------------------------------------------------------
+# Delibera
+--------------------------------------------------------------*/
+
+#delibera {
+	margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
+}
