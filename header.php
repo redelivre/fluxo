@@ -32,7 +32,7 @@
 					<?php else : ?>
 						<p class="site-title visuallyhidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 					<?php endif; ?>
-					<img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/redelivre-blue--small.png'; ?>" alt="Logo redelivre" class="site-logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo get_stylesheet_directory_uri() . '/assets/images/redelivre-blue--small.png'; ?>" alt="Logo redelivre" class="site-logo"></a>
 				</div><!-- .site-branding -->
 			</div>
 
