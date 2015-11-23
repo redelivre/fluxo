@@ -25,7 +25,7 @@
 		<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'fluxo' ); ?></a>
 		
 		<div class="row">
-		 	<div class="medium-6 columns">
+		 	<div class="medium-4 columns">
 				<div class="site-branding">
 					<?php if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title visuallyhidden"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -36,7 +36,7 @@
 				</div><!-- .site-branding -->
 			</div>
 
-			<div class="medium-6 columns">
+			<div class="medium-8 columns">
 				<nav id="site-navigation" class="site-navigation site-navigation--main medium-text-right" role="navigation">
 					<?php
 					if ( has_nav_menu( 'primary' ) )
