@@ -38,9 +38,24 @@
 
 			<div class="medium-6 columns">
 				<nav id="site-navigation" class="site-navigation site-navigation--main medium-text-right" role="navigation">
-					<?php //wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-					<a href="<?php echo wp_registration_url(); ?>">Cadastre-se</a>
-					<?php wp_loginout(); ?>
+					<?php
+					if ( has_nav_menu( 'primary' ) )
+					{
+						echo strip_tags(wp_nav_menu( array(
+								'theme_location' => 'primary',
+								'menu_id' => 'primary-menu',
+								'container'       => false,
+								'echo'            => false,
+								'items_wrap'      => '%3$s',
+								'depth'           => 0,
+						) ), '<a>' );
+					}
+					else
+					{?>
+						<a href="<?php echo wp_registration_url(); ?>">Cadastre-se</a>
+						<?php
+					}
+					wp_loginout();?>
 				</nav><!-- #site-navigation -->
 			</div>
 		</div>
