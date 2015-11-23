@@ -264,3 +264,15 @@ function fluxo_category_transient_flusher() {
 }
 add_action( 'edit_category', 'fluxo_category_transient_flusher' );
 add_action( 'save_post',     'fluxo_category_transient_flusher' );
+
+function fluxo_before_signup_form()
+{
+	echo '<div class="row">';
+}
+add_action('before_signup_form', 'fluxo_before_signup_form');
+
+function fluxo_after_signup_form()
+{
+	echo '</div>';
+}
+add_action('after_signup_form', 'fluxo_after_signup_form');

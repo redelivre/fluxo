@@ -230,10 +230,15 @@ p.lead {
   margin-left: auto;
   margin-right: auto; }
 
+.container-registro,
 .archive .content-area,
 .single .content-area,
 .page .content-area {
     margin-top: 10em;
+}
+
+.container-registro {
+	margin-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
