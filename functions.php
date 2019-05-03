@@ -155,7 +155,7 @@ function fluxo_scripts() {
 	}
 
 	// Grunt watch livereload in the browser.
-	wp_enqueue_script( 'fluxo-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true );
+	//wp_enqueue_script( 'fluxo-livereload', 'http://localhost:35729/livereload.js?snipver=1', array(), null, true ); // For dev
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
